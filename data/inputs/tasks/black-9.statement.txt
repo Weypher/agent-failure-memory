@@ -1,0 +1,35 @@
+Resolve the following issue reported for this repository.
+
+Issue title: black inserts unnecessary whitespace around print() with target_version = py27
+
+black is adding whitespace between `print` and `(` with `--target-version py27`.
+
+**Test file:**
+
+```python
+from __future__ import print_function
+
+print("hello world")
+```
+
+**Result:**
+
+```console
+$ black t.py --target-version py27 --diff
+--- t.py	2019-03-14 22:09:34.902887 +0000
++++ t.py	2019-03-14 22:10:21.022372 +0000
+@@ -1,4 +1,4 @@
+ from __future__ import print_function
+
+-print("hello world")
++print ("hello world")
+
+reformatted t.py
+All done! ✨ 🍰 ✨
+1 file reformatted.
+```
+
+Operating system: OS X 
+Python version: 3.7.2
+*Black* version: 19.3b0
+Does also happen on master: yes

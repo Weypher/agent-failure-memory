@@ -1,0 +1,23 @@
+{
+ "status": "FROZEN_BEFORE_SCREENING_REMAINING_POOL",
+ "date": "2026-10-15",
+ "commit": "0e2eb0df5866188c1c6886548c7f438dd1870bf3",
+ "code_sha256": {
+  "envs/trial_build.py": "5310de6fbe160376a5e13fd0ef34ef34319435137da392623f436dac34e48c96",
+  "envs/task_spec.py": "65975039e0dd62a6d385375442268e069eb90c69af9b9ef676dbf4f79b21c911",
+  "envs/sandbox_controls.py": "f21eff2d1a2f25060a4ec048d230775d580c700d741fc62f8267de0025c4ce80",
+  "envs/compose_statements.py": "c99b4821816767869b383fabc1e7a67a2a4109bd3758b5f102cd51cc20af8dcd",
+  "envs/fetch_statements.py": "c302a8542ca03e801ca6ca4c9ec96f9bad5809c716b8e0d8e40f564bc1a46fcf",
+  "m1/prepare_dev.py": "292c97a444deadde4a3e894a7b5fc26f7728042850f61bca9231bd6aed58c0e3",
+  "planning/statement-rule-draft-r1.json": "415207e65836d72ce19ad2d730b4eaf1966e07506f722fe64a30b4dd09a0a17d"
+ },
+ "rules": [
+  "Environment: trial_build round r7 builder; buggy control fails and fixed control passes (BugsInPy commands).",
+  "Sandbox: event-scored controls, buggy=test_failures_observed and reference=resolved, twice each (sandbox_controls REPEATS=2).",
+  "Statement: linked-issue rule (statement-rule-draft-r1.json) as implemented in compose_statements.py; leakage screen; <=8000 chars.",
+  "Initial prompt conservative bound <= 32000 bytes.",
+  "Projects requiring native-extension builds of the project itself (pandas, matplotlib, spacy) are outside the frame: the builder does not compile project C extensions (frame restriction, reported).",
+  "Exclusions: M1 DEV tasks; old-project exposed tasks fastapi/1, tqdm/1, matplotlib/1."
+ ],
+ "note": "Eligibility uses no model outcomes. Remaining pool (incl. the old project's never-exposed 120-task frame) is screened only after this freeze."
+}

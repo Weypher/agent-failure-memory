@@ -1,0 +1,36 @@
+{
+ "window_seconds": 3600,
+ "stop_mtime": 1792110219.621712,
+ "seconds_before_stop": {
+  "ansible/10": 10484,
+  "ansible/11": 10484,
+  "ansible/12": 10484,
+  "ansible/15": 10485,
+  "ansible/4": 10490,
+  "ansible/8": 10484,
+  "black/10": 10043,
+  "black/12": 9935,
+  "black/13": 9883,
+  "black/14": 8648,
+  "black/15": 8277,
+  "black/18": 7100,
+  "black/20": 7047,
+  "black/22": 6762,
+  "black/23": 6491,
+  "black/3": 6349,
+  "black/7": 6303,
+  "black/8": 5354,
+  "black/9": 4245,
+  "fastapi/2": 3624,
+  "fastapi/4": 3313,
+  "fastapi/6": 2966,
+  "fastapi/8": 2552,
+  "fastapi/9": 2081
+ },
+ "late_kept_tasks": [
+  "fastapi/4",
+  "fastapi/6",
+  "fastapi/8",
+  "fastapi/9"
+ ]
+}

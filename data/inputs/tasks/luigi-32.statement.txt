@@ -1,0 +1,7 @@
+Resolve the following issue reported for this repository.
+
+Issue title: PyPI released version 1.1.1 breaks because `logger` is not defined in task_register.py
+
+See:
+
+https://github.com/spotify/luigi/blob/be728d82ff90f879fef703e13b6b9192de0d8b27/luigi/task_register.py#L91

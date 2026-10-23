@@ -1,0 +1,450 @@
+{
+ "kind": "POST_HOC_NOT_PREREGISTERED",
+ "source": "planning/m1-main-r1/analysis-final/C.json",
+ "B_by_attempt_edits": {
+  "attempt_edited_source": {
+   "n": 100,
+   "lesson_file_hit": {
+    "n": 100,
+    "rate": 0.96
+   },
+   "lesson_top1_file_hit": {
+    "n": 100,
+    "rate": 0.94
+   },
+   "attempt_file_hit": {
+    "n": 100,
+    "rate": 0.95
+   },
+   "attempt_top1_file_hit": {
+    "n": 100,
+    "rate": 0.92
+   },
+   "lesson_mean_files": 2.31,
+   "attempt_mean_files": 1.04,
+   "lesson_file_precision": {
+    "n": 100,
+    "rate": 0.4595
+   },
+   "attempt_file_precision": {
+    "n": 100,
+    "rate": 0.935
+   },
+   "lesson_beyond_attempt_file": {
+    "n": 100,
+    "rate": 0.01
+   }
+  },
+  "attempt_no_source_edits": {
+   "n": 81,
+   "lesson_file_hit": {
+    "n": 81,
+    "rate": 0.8888888888888888
+   },
+   "lesson_top1_file_hit": {
+    "n": 81,
+    "rate": 0.7901234567901234
+   },
+   "attempt_file_hit": {
+    "n": 81,
+    "rate": 0.0
+   },
+   "attempt_top1_file_hit": {
+    "n": 81,
+    "rate": 0.0
+   },
+   "lesson_mean_files": 2.6049382716049383,
+   "attempt_mean_files": 0.0,
+   "lesson_file_precision": {
+    "n": 81,
+    "rate": 0.39855967078189297
+   },
+   "attempt_file_precision": {
+    "n": 0,
+    "rate": null
+   },
+   "lesson_beyond_attempt_file": {
+    "n": 81,
+    "rate": 0.8888888888888888
+   }
+  },
+  "all": {
+   "n": 181,
+   "lesson_file_hit": {
+    "n": 181,
+    "rate": 0.9281767955801105
+   },
+   "lesson_top1_file_hit": {
+    "n": 181,
+    "rate": 0.8729281767955801
+   },
+   "attempt_file_hit": {
+    "n": 181,
+    "rate": 0.5248618784530387
+   },
+   "attempt_top1_file_hit": {
+    "n": 181,
+    "rate": 0.5082872928176796
+   },
+   "lesson_mean_files": 2.4419889502762433,
+   "attempt_mean_files": 0.574585635359116,
+   "lesson_file_precision": {
+    "n": 181,
+    "rate": 0.4322283609576427
+   },
+   "attempt_file_precision": {
+    "n": 100,
+    "rate": 0.935
+   },
+   "lesson_beyond_attempt_file": {
+    "n": 181,
+    "rate": 0.40331491712707185
+   }
+  }
+ },
+ "B_functions_applicable": {
+  "n": 169,
+  "lesson_function_hit": {
+   "n": 169,
+   "rate": 0.7514792899408284
+  },
+  "lesson_function_hit_strict": {
+   "n": 169,
+   "rate": 0.6923076923076923
+  },
+  "attempt_function_hit": {
+   "n": 169,
+   "rate": 0.40236686390532544
+  }
+ },
+ "B_reference_file_concentration": {
+  "most_common": [
+   [
+    [
+     "black.py"
+    ],
+    44
+   ],
+   [
+    [
+     "youtube_dl/utils.py"
+    ],
+    17
+   ],
+   [
+    [
+     "tqdm/_tqdm.py"
+    ],
+    7
+   ],
+   [
+    [
+     "blib2to3/pgen2/driver.py"
+    ],
+    6
+   ],
+   [
+    [
+     "blib2to3/pgen2/tokenize.py"
+    ],
+    6
+   ]
+  ],
+  "excluding_black_lesson_file_hit": {
+   "n": 119,
+   "rate": 0.9915966386554622
+  }
+ },
+ "per_project": {
+  "ansible": {
+   "instances": 11,
+   "tasks": 3,
+   "NONE": 0.09090909090909091,
+   "HISTORY": 0.45454545454545453,
+   "REFLECT": 0.36363636363636365,
+   "SIGNAL": 0.2727272727272727,
+   "BOTH": 0.18181818181818182
+  },
+  "black": {
+   "instances": 62,
+   "tasks": 12,
+   "NONE": 0.0967741935483871,
+   "HISTORY": 0.20967741935483872,
+   "REFLECT": 0.14516129032258066,
+   "SIGNAL": 0.14516129032258066,
+   "BOTH": 0.1935483870967742
+  },
+  "fastapi": {
+   "instances": 8,
+   "tasks": 5,
+   "NONE": 0.875,
+   "HISTORY": 0.875,
+   "REFLECT": 0.875,
+   "SIGNAL": 1.0,
+   "BOTH": 0.875
+  },
+  "httpie": {
+   "instances": 5,
+   "tasks": 1,
+   "NONE": 0.0,
+   "HISTORY": 0.4,
+   "REFLECT": 0.0,
+   "SIGNAL": 0.2,
+   "BOTH": 0.0
+  },
+  "luigi": {
+   "instances": 8,
+   "tasks": 3,
+   "NONE": 0.0,
+   "HISTORY": 0.875,
+   "REFLECT": 0.875,
+   "SIGNAL": 0.5,
+   "BOTH": 0.875
+  },
+  "sanic": {
+   "instances": 4,
+   "tasks": 2,
+   "NONE": 0.75,
+   "HISTORY": 0.75,
+   "REFLECT": 0.75,
+   "SIGNAL": 0.5,
+   "BOTH": 0.75
+  },
+  "scrapy": {
+   "instances": 15,
+   "tasks": 5,
+   "NONE": 0.4,
+   "HISTORY": 0.4666666666666667,
+   "REFLECT": 0.4,
+   "SIGNAL": 0.4,
+   "BOTH": 0.4666666666666667
+  },
+  "thefuck": {
+   "instances": 7,
+   "tasks": 3,
+   "NONE": 0.8571428571428571,
+   "HISTORY": 0.2857142857142857,
+   "REFLECT": 0.5714285714285714,
+   "SIGNAL": 0.7142857142857143,
+   "BOTH": 0.5714285714285714
+  },
+  "tornado": {
+   "instances": 11,
+   "tasks": 5,
+   "NONE": 0.36363636363636365,
+   "HISTORY": 0.6363636363636364,
+   "REFLECT": 0.5454545454545454,
+   "SIGNAL": 0.7272727272727273,
+   "BOTH": 0.5454545454545454
+  },
+  "tqdm": {
+   "instances": 15,
+   "tasks": 4,
+   "NONE": 0.4,
+   "HISTORY": 0.3333333333333333,
+   "REFLECT": 0.3333333333333333,
+   "SIGNAL": 0.26666666666666666,
+   "BOTH": 0.5333333333333333
+  },
+  "youtube-dl": {
+   "instances": 35,
+   "tasks": 9,
+   "NONE": 0.42857142857142855,
+   "HISTORY": 0.37142857142857144,
+   "REFLECT": 0.47058823529411764,
+   "SIGNAL": 0.4,
+   "BOTH": 0.45714285714285713
+  }
+ },
+ "excluding_black": {
+  "HISTORY-NONE": {
+   "n_instances": 119,
+   "n_tasks": 40,
+   "difference": 0.08403361344537816,
+   "ci95": [
+    -0.05357142857142857,
+    0.21153846153846154
+   ]
+  },
+  "REFLECT-NONE": {
+   "n_instances": 118,
+   "n_tasks": 40,
+   "difference": 0.0847457627118644,
+   "ci95": [
+    -0.045454545454545456,
+    0.22727272727272727
+   ]
+  },
+  "SIGNAL-NONE": {
+   "n_instances": 119,
+   "n_tasks": 40,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.03669724770642202,
+    0.16521739130434782
+   ]
+  },
+  "BOTH-NONE": {
+   "n_instances": 119,
+   "n_tasks": 40,
+   "difference": 0.10084033613445378,
+   "ci95": [
+    -0.022388059701492536,
+    0.2222222222222222
+   ]
+  }
+ },
+ "leave_one_project_out": {
+  "ansible": {
+   "HISTORY-NONE": 0.0765,
+   "REFLECT-NONE": 0.0592,
+   "SIGNAL-NONE": 0.0471,
+   "BOTH-NONE": 0.1
+  },
+  "black": {
+   "HISTORY-NONE": 0.084,
+   "REFLECT-NONE": 0.0847,
+   "SIGNAL-NONE": 0.0588,
+   "BOTH-NONE": 0.1008
+  },
+  "fastapi": {
+   "HISTORY-NONE": 0.0983,
+   "REFLECT-NONE": 0.0756,
+   "SIGNAL-NONE": 0.052,
+   "BOTH-NONE": 0.104
+  },
+  "httpie": {
+   "HISTORY-NONE": 0.0852,
+   "REFLECT-NONE": 0.0743,
+   "SIGNAL-NONE": 0.0511,
+   "BOTH-NONE": 0.1023
+  },
+  "luigi": {
+   "HISTORY-NONE": 0.0578,
+   "REFLECT-NONE": 0.0349,
+   "SIGNAL-NONE": 0.0347,
+   "BOTH-NONE": 0.0636
+  },
+  "sanic": {
+   "HISTORY-NONE": 0.096,
+   "REFLECT-NONE": 0.0739,
+   "SIGNAL-NONE": 0.0621,
+   "BOTH-NONE": 0.1017
+  },
+  "scrapy": {
+   "HISTORY-NONE": 0.0964,
+   "REFLECT-NONE": 0.0788,
+   "SIGNAL-NONE": 0.0602,
+   "BOTH-NONE": 0.1024
+  },
+  "thefuck": {
+   "HISTORY-NONE": 0.1207,
+   "REFLECT-NONE": 0.0867,
+   "SIGNAL-NONE": 0.0632,
+   "BOTH-NONE": 0.1149
+  },
+  "tornado": {
+   "HISTORY-NONE": 0.0824,
+   "REFLECT-NONE": 0.0651,
+   "SIGNAL-NONE": 0.0353,
+   "BOTH-NONE": 0.0941
+  },
+  "tqdm": {
+   "HISTORY-NONE": 0.1084,
+   "REFLECT-NONE": 0.0848,
+   "SIGNAL-NONE": 0.0723,
+   "BOTH-NONE": 0.0964
+  },
+  "youtube-dl": {
+   "HISTORY-NONE": 0.1301,
+   "REFLECT-NONE": 0.0822,
+   "SIGNAL-NONE": 0.0753,
+   "BOTH-NONE": 0.1164
+  }
+ },
+ "by_route": {
+  "r2_kept": {
+   "instances": 81,
+   "NONE": 0.1728395061728395,
+   "HISTORY": 0.30864197530864196,
+   "REFLECT": 0.24691358024691357,
+   "SIGNAL": 0.24691358024691357,
+   "BOTH": 0.25925925925925924
+  },
+  "r3_kept": {
+   "instances": 32,
+   "NONE": 0.28125,
+   "HISTORY": 0.59375,
+   "REFLECT": 0.5,
+   "SIGNAL": 0.40625,
+   "BOTH": 0.53125
+  },
+  "r4": {
+   "instances": 68,
+   "NONE": 0.45588235294117646,
+   "HISTORY": 0.39705882352941174,
+   "REFLECT": 0.4626865671641791,
+   "SIGNAL": 0.45588235294117646,
+   "BOTH": 0.5
+  }
+ },
+ "retry_limits_by_arm": {
+  "NONE": {
+   "context_limit": 6,
+   "output_limit": 12,
+   "context_limit_resolved": 2
+  },
+  "HISTORY": {
+   "context_limit": 11,
+   "output_limit": 8,
+   "context_limit_resolved": 0
+  },
+  "REFLECT": {
+   "context_limit": 5,
+   "output_limit": 6,
+   "context_limit_resolved": 0
+  },
+  "SIGNAL": {
+   "context_limit": 9,
+   "output_limit": 10,
+   "context_limit_resolved": 1
+  },
+  "BOTH": {
+   "context_limit": 8,
+   "output_limit": 6,
+   "context_limit_resolved": 1
+  }
+ },
+ "sensitivity_context_limit_as_unresolved": {
+  "HISTORY-NONE": 0.105,
+  "REFLECT-NONE": 0.0833,
+  "SIGNAL-NONE": 0.0608,
+  "BOTH-NONE": 0.105
+ },
+ "incomplete_finish_reasons": [
+  [
+   [
+    "m1-main-paid-r2",
+    "length",
+    false
+   ],
+   39
+  ],
+  [
+   [
+    "m1-main-paid-r3",
+    "length",
+    false
+   ],
+   9
+  ],
+  [
+   [
+    "m1-main-paid-r4",
+    "length",
+    false
+   ],
+   17
+  ]
+ ]
+}

@@ -1,0 +1,7 @@
+Resolve the following issue reported for this repository.
+
+Issue title: ioloop.py(line 252) is None or not None
+
+![qq20150724-1](https://cloud.githubusercontent.com/assets/1759875/8869574/e79c044c-3217-11e5-96ec-3d3d553e5b5d.png)
+
+line 252， IOLoop.current(instance=False) is None。why then raise "already exists"?

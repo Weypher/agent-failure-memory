@@ -1,0 +1,16 @@
+Resolve the following issue reported for this repository.
+
+Issue title: Git push on new branch
+
+When running `git push` on a new branch
+
+```
+fatal: The current branch update-project-availability has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin [branch_name]
+```
+
+It would be nice if I can just say `fuck` and it will run that command.
+
+Currently it gives `no fucks given`

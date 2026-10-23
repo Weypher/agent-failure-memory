@@ -1,0 +1,34 @@
+Resolve the following issue reported for this repository.
+
+Issue title: Optional strip on ios_banner
+
+##### SUMMARY
+
+The ios_banner currently strips any text passed to it, making certain banner formats impossible to replicate properly.
+
+##### ISSUE TYPE
+- Feature Idea
+
+##### COMPONENT NAME
+
+ios_banner
+
+##### ADDITIONAL INFORMATION
+
+Add a boolean switch to the module params (`strip`, perhaps) that would conditionally strip or not the text passed from the param. Could be optional and default to `True`.
+
+
+```yaml
+ios_banner:
+  strip: no
+  banner: login
+  present: yes
+  text: "{{ lookup('template', 'banner.j2') }}"
+```
+with the `banner.j2` looking like
+```
+            WARNING
+This is a private system if you
+do not belong here, bugger off
+or something.
+```

@@ -1,0 +1,50 @@
+Resolve the following issue reported for this repository.
+
+Issue title: Logger not work.
+
+**Describe the bug**
+Logger did not work at current master commit (https://github.com/huge-success/sanic/commit/7d79a86d4dc48de11cd34e8ba12e41f3a9f9ff18).
+
+
+**Code snippet**
+```python
+from sanic import Sanic
+from sanic.log import logger
+from sanic.response import text
+
+
+app = Sanic()
+
+@app.listener('before_server_start')
+async def setup(app, loop):
+    logger.info('INFO')
+
+
+@app.get('/')
+async def test(request):
+    return text('hello world')
+
+
+if __name__ == '__main__':
+    app.run()
+```
+There is no any log/output now.
+
+
+
+**Expected behavior**
+At `0.8.3` release, it will logging/output some messages like:
+```
+[2018-11-05 17:34:47 +0800] [12112] [INFO] Goin' Fast @ http://127.0.0.1:8000
+[2018-11-05 17:34:47 +0800] [12112] [INFO] INFO
+[2018-11-05 17:34:47 +0800] [12112] [INFO] Starting worker [12112]
+```
+
+
+**Environment (please complete the following information):**
+ - OS: Ubuntu 18.04
+ - Version: https://github.com/huge-success/sanic/commit/7d79a86d4dc48de11cd34e8ba12e41f3a9f9ff18
+
+
+**Additional context**
+It seems that `getLogger()` does not get the correct logger at [line 56](https://github.com/huge-success/sanic/blob/master/sanic/log.py#L56) in `log.py`. The logger is trying to get a logger named `sanic.root`, but it does not exist. Rename the logger `root` at [line 9](https://github.com/huge-success/sanic/blob/master/sanic/log.py#L9) should fix this bug.

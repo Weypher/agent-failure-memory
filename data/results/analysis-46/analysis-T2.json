@@ -1,0 +1,698 @@
+{
+ "kind": "PREDECLARED_MAIN_ANALYSIS",
+ "seed": 20261015,
+ "bootstrap": 10000,
+ "first_attempts": {
+  "n": 144,
+  "by_status": {
+   "context_limit": 9,
+   "declared_done": 58,
+   "invalid_test_execution": 3,
+   "output_limit": 8,
+   "response_limit": 66
+  },
+  "by_outcome": {
+   "resolved": 63,
+   "unresolved": 81
+  },
+  "natural_failures": 81
+ },
+ "availability": {
+  "NONE": 81,
+  "HISTORY": 81,
+  "REFLECT": 81,
+  "SIGNAL": 81,
+  "BOTH": 81
+ },
+ "lesson_censored": 0,
+ "primary_itt": [
+  {
+   "contrast": "HISTORY-NONE",
+   "task_weighted": 0.14916666666666667,
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.13580246913580246,
+   "ci95": [
+    0.05128205128205128,
+    0.24675324675324675
+   ],
+   "p_permutation": 0.017298270172982702,
+   "p_holm": 0.06919308069193081
+  },
+  {
+   "contrast": "REFLECT-NONE",
+   "task_weighted": 0.09833333333333333,
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.07407407407407407,
+   "ci95": [
+    -0.03614457831325301,
+    0.20238095238095238
+   ],
+   "p_permutation": 0.36026397360263973,
+   "p_holm": 0.39316068393160686
+  },
+  {
+   "contrast": "SIGNAL-NONE",
+   "task_weighted": 0.11583333333333332,
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.07407407407407407,
+   "ci95": [
+    0.011904761904761904,
+    0.15853658536585366
+   ],
+   "p_permutation": 0.12768723127687232,
+   "p_holm": 0.38306169383061695
+  },
+  {
+   "contrast": "BOTH-NONE",
+   "task_weighted": 0.08916666666666666,
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.08641975308641975,
+   "ci95": [
+    -0.013333333333333334,
+    0.19718309859154928
+   ],
+   "p_permutation": 0.19658034196580343,
+   "p_holm": 0.39316068393160686
+  }
+ ],
+ "framing": "Estimation: report differences with 95% CIs; a non-significant result is not evidence of no effect.",
+ "per_project": {
+  "ansible": {
+   "instances": 11,
+   "tasks": 3
+  },
+  "black": {
+   "instances": 62,
+   "tasks": 12
+  },
+  "fastapi": {
+   "instances": 8,
+   "tasks": 5
+  }
+ },
+ "retry_subtypes_by_arm": {
+  "NONE": {
+   "context_limit": 2,
+   "declared_done": 19,
+   "invalid_test_execution/non_test_exit": 1,
+   "output_limit": 6,
+   "response_limit": 48,
+   "response_limit/non_test_exit": 5
+  },
+  "HISTORY": {
+   "context_limit": 3,
+   "declared_done": 29,
+   "invalid_test_execution/non_test_exit": 3,
+   "output_limit": 4,
+   "response_limit": 39,
+   "response_limit/non_test_exit": 3
+  },
+  "REFLECT": {
+   "context_limit": 2,
+   "declared_done": 18,
+   "invalid_test_execution/non_test_exit": 1,
+   "output_limit": 4,
+   "response_limit": 54,
+   "response_limit/non_test_exit": 2
+  },
+  "SIGNAL": {
+   "context_limit": 4,
+   "declared_done": 24,
+   "invalid_test_execution/non_test_exit": 1,
+   "output_limit": 6,
+   "response_limit": 44,
+   "response_limit/non_test_exit": 2
+  },
+  "BOTH": {
+   "context_limit": 3,
+   "declared_done": 19,
+   "output_limit": 4,
+   "response_limit": 54,
+   "response_limit/non_test_exit": 1
+  }
+ },
+ "lesson_status_by_a1_subtype": {
+  "response_limit": {
+   "valid": 48
+  },
+  "declared_done": {
+   "valid": 14
+  },
+  "declared_done/non_test_exit": {
+   "valid": 1
+  },
+  "invalid_test_execution/non_test_exit": {
+   "valid": 3
+  },
+  "output_limit": {
+   "valid": 8
+  },
+  "context_limit": {
+   "valid": 6
+  },
+  "response_limit/non_test_exit": {
+   "valid": 1
+  }
+ },
+ "secondary_itt": [
+  {
+   "contrast": "REFLECT-HISTORY",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": -0.06172839506172839,
+   "ci95": [
+    -0.17647058823529413,
+    0.03529411764705882
+   ],
+   "p_permutation": 0.38606139386061394
+  },
+  {
+   "contrast": "REFLECT-SIGNAL",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.0,
+   "ci95": [
+    -0.09195402298850575,
+    0.0989010989010989
+   ],
+   "p_permutation": 1.0
+  },
+  {
+   "contrast": "BOTH-REFLECT",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.012345679012345678,
+   "ci95": [
+    -0.07777777777777778,
+    0.1125
+   ],
+   "p_permutation": 1.0
+  }
+ ],
+ "sensitivity_complete_case": [
+  {
+   "contrast": "HISTORY-NONE",
+   "n_instances": 76,
+   "n_tasks": 20,
+   "difference": 0.15789473684210525,
+   "ci95": [
+    0.06666666666666667,
+    0.2727272727272727
+   ],
+   "p_permutation": 0.007399260073992601
+  },
+  {
+   "contrast": "REFLECT-NONE",
+   "n_instances": 78,
+   "n_tasks": 20,
+   "difference": 0.07692307692307693,
+   "ci95": [
+    -0.038461538461538464,
+    0.20833333333333334
+   ],
+   "p_permutation": 0.35396460353964604
+  },
+  {
+   "contrast": "SIGNAL-NONE",
+   "n_instances": 76,
+   "n_tasks": 20,
+   "difference": 0.07894736842105263,
+   "ci95": [
+    0.012987012987012988,
+    0.1643835616438356
+   ],
+   "p_permutation": 0.12808719128087193
+  },
+  {
+   "contrast": "BOTH-NONE",
+   "n_instances": 77,
+   "n_tasks": 20,
+   "difference": 0.1038961038961039,
+   "ci95": [
+    0.0,
+    0.2125
+   ],
+   "p_permutation": 0.12208779122087791
+  }
+ ],
+ "cost_usd": [
+  {
+   "contrast": "HISTORY-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.004012896296296297,
+   "ci95": [
+    -8.107499999999975e-05,
+    0.007756632631578947
+   ],
+   "p_permutation": 0.0810918908109189
+  },
+  {
+   "contrast": "REFLECT-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.007442118518518518,
+   "ci95": [
+    0.005142675882352941,
+    0.009583106962025316
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  {
+   "contrast": "SIGNAL-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 5.960185185185216e-05,
+   "ci95": [
+    -0.0027700744186046505,
+    0.0027891017241379315
+   ],
+   "p_permutation": 0.9712028797120288
+  },
+  {
+   "contrast": "BOTH-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.007205472222222223,
+   "ci95": [
+    0.004103769402985075,
+    0.009652451785714286
+   ],
+   "p_permutation": 0.0011998800119988001
+  }
+ ],
+ "seconds": [
+  {
+   "contrast": "HISTORY-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": -3.852762109172792,
+   "ci95": [
+    -14.455007272220463,
+    5.574299265246634
+   ],
+   "p_permutation": 0.47065293470652936
+  },
+  {
+   "contrast": "REFLECT-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 21.62188162802529,
+   "ci95": [
+    12.9403531595628,
+    29.54100977177227
+   ],
+   "p_permutation": 0.00039996000399960006
+  },
+  {
+   "contrast": "SIGNAL-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 1.7393303090366203,
+   "ci95": [
+    -5.467026954783619,
+    9.081096856499292
+   ],
+   "p_permutation": 0.6568343165683431
+  },
+  {
+   "contrast": "BOTH-NONE",
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 19.19378892772987,
+   "ci95": [
+    10.43878367647825,
+    28.007393452878752
+   ],
+   "p_permutation": 0.0005999400059994001
+  }
+ ],
+ "resolution_rates": {
+  "NONE": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.1728395061728395,
+   "ci95": [
+    0.08602150537634409,
+    0.29411764705882354
+   ],
+   "p_permutation": 0.0004999500049995
+  },
+  "HISTORY": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.30864197530864196,
+   "ci95": [
+    0.1827956989247312,
+    0.4657534246575342
+   ],
+   "p_permutation": 0.00019998000199980003
+  },
+  "REFLECT": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.24691358024691357,
+   "ci95": [
+    0.11904761904761904,
+    0.4027777777777778
+   ],
+   "p_permutation": 0.0008999100089991
+  },
+  "SIGNAL": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.24691358024691357,
+   "ci95": [
+    0.13592233009708737,
+    0.39473684210526316
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "BOTH": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.25925925925925924,
+   "ci95": [
+    0.12790697674418605,
+    0.41975308641975306
+   ],
+   "p_permutation": 0.0021997800219978004
+  }
+ },
+ "descriptive_lessons": {
+  "lesson_top1_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.7407407407407407,
+   "ci95": [
+    0.5641025641025641,
+    0.9
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "baseline_attempt_top1_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.5308641975308642,
+   "ci95": [
+    0.36764705882352944,
+    0.6951219512195121
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "lesson_beyond_baseline_attempt_top1_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.2222222222222222,
+   "ci95": [
+    0.11904761904761904,
+    0.34285714285714286
+   ],
+   "p_permutation": 0.000999900009999
+  },
+  "baseline_traceback_top1_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.1728395061728395,
+   "ci95": [
+    0.05194805194805195,
+    0.323943661971831
+   ],
+   "p_permutation": 0.032096790320967905
+  },
+  "lesson_beyond_baseline_traceback_top1_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.5925925925925926,
+   "ci95": [
+    0.41025641025641024,
+    0.76
+   ],
+   "p_permutation": 0.00029997000299970003
+  },
+  "lesson_top1_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.32098765432098764,
+   "ci95": [
+    0.1794871794871795,
+    0.484375
+   ],
+   "p_permutation": 0.0007999200079992001
+  },
+  "baseline_attempt_top1_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.2962962962962963,
+   "ci95": [
+    0.16279069767441862,
+    0.44776119402985076
+   ],
+   "p_permutation": 0.0023997600239976003
+  },
+  "lesson_beyond_baseline_attempt_top1_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.12345679012345678,
+   "ci95": [
+    0.04285714285714286,
+    0.23333333333333334
+   ],
+   "p_permutation": 0.016698330166983303
+  },
+  "baseline_traceback_top1_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "p_permutation": 1.0
+  },
+  "lesson_beyond_baseline_traceback_top1_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.32098765432098764,
+   "ci95": [
+    0.17857142857142858,
+    0.48717948717948717
+   ],
+   "p_permutation": 0.0006999300069993001
+  },
+  "lesson_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.8395061728395061,
+   "ci95": [
+    0.7011494252873564,
+    0.9605263157894737
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "baseline_attempt_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.5308641975308642,
+   "ci95": [
+    0.36585365853658536,
+    0.6987951807228916
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "lesson_beyond_baseline_attempt_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.30864197530864196,
+   "ci95": [
+    0.19753086419753085,
+    0.43103448275862066
+   ],
+   "p_permutation": 0.0005999400059994001
+  },
+  "baseline_traceback_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.20987654320987653,
+   "ci95": [
+    0.08433734939759036,
+    0.36764705882352944
+   ],
+   "p_permutation": 0.0091990800919908
+  },
+  "lesson_beyond_baseline_traceback_file_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.6296296296296297,
+   "ci95": [
+    0.47126436781609193,
+    0.7777777777777778
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "lesson_file_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.8395061728395061,
+   "ci95": [
+    0.6979166666666666,
+    0.9620253164556962
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "baseline_attempt_file_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.5308641975308642,
+   "ci95": [
+    0.36363636363636365,
+    0.6962025316455697
+   ],
+   "p_permutation": 0.00019998000199980003
+  },
+  "lesson_beyond_baseline_attempt_file_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.30864197530864196,
+   "ci95": [
+    0.19736842105263158,
+    0.4305555555555556
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "baseline_traceback_file_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.20987654320987653,
+   "ci95": [
+    0.08235294117647059,
+    0.3670886075949367
+   ],
+   "p_permutation": 0.007499250074992501
+  },
+  "lesson_beyond_baseline_traceback_file_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.6296296296296297,
+   "ci95": [
+    0.46835443037974683,
+    0.7840909090909091
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "lesson_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.48148148148148145,
+   "ci95": [
+    0.3076923076923077,
+    0.6712328767123288
+   ],
+   "p_permutation": 0.00029997000299970003
+  },
+  "baseline_attempt_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.37037037037037035,
+   "ci95": [
+    0.20833333333333334,
+    0.5540540540540541
+   ],
+   "p_permutation": 0.0011998800119988001
+  },
+  "lesson_beyond_baseline_attempt_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.16049382716049382,
+   "ci95": [
+    0.07692307692307693,
+    0.25675675675675674
+   ],
+   "p_permutation": 0.004899510048995101
+  },
+  "baseline_traceback_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.06172839506172839,
+   "ci95": [
+    0.0,
+    0.14666666666666667
+   ],
+   "p_permutation": 0.2501749825017498
+  },
+  "lesson_beyond_baseline_traceback_function_hit": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.43209876543209874,
+   "ci95": [
+    0.2736842105263158,
+    0.6119402985074627
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "lesson_function_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.4444444444444444,
+   "ci95": [
+    0.27710843373493976,
+    0.6323529411764706
+   ],
+   "p_permutation": 0.00019998000199980003
+  },
+  "baseline_attempt_function_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.35802469135802467,
+   "ci95": [
+    0.2,
+    0.5285714285714286
+   ],
+   "p_permutation": 0.0007999200079992001
+  },
+  "lesson_beyond_baseline_attempt_function_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.14814814814814814,
+   "ci95": [
+    0.08,
+    0.22784810126582278
+   ],
+   "p_permutation": 0.0021997800219978004
+  },
+  "baseline_traceback_function_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.04938271604938271,
+   "ci95": [
+    0.0,
+    0.13414634146341464
+   ],
+   "p_permutation": 0.49565043495650435
+  },
+  "lesson_beyond_baseline_traceback_function_hit_strict": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.41975308641975306,
+   "ci95": [
+    0.26436781609195403,
+    0.5974025974025974
+   ],
+   "p_permutation": 9.999000099990002e-05
+  },
+  "any_unsupported_claim": {
+   "n_instances": 81,
+   "n_tasks": 20,
+   "difference": 0.012345679012345678,
+   "ci95": [
+    0.0,
+    0.04
+   ],
+   "p_permutation": 1.0
+  }
+ }
+}

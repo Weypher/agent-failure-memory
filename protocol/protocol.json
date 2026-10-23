@@ -1,0 +1,69 @@
+{
+ "status": "DRAFT_TO_FREEZE_WITH_SCOPE",
+ "stage": "afm-m1-main-r4",
+ "permission": "M1_MAIN_ONLY",
+ "questions": {
+  "A_primary": "Among natural first-attempt failures in ordinary repository repair, does retry memory change selected-test resolution relative to a plain retry (NONE): HISTORY (capped raw failure record), REFLECT (model-written lesson from that same record), SIGNAL (deterministic digest of final evaluation and workspace delta), BOTH (REFLECT+SIGNAL)?",
+  "A_secondary": "REFLECT vs HISTORY (model processing of identical information); REFLECT vs SIGNAL; BOTH vs REFLECT; cost and wall-clock per retry.",
+  "B_descriptive": "How often do self-written lessons locate the reference-fix file/function (lenient and strict), compared with deterministic baselines (the failed attempt's own edits; traceback frames), how often do they add a correct location beyond those baselines, and how often do they contain unsupported test/exception claims?"
+ },
+ "frame": "All tasks eligible under planning/main-eligibility-rules-r1.json (frozen before screening) after excluding M1 DEV and old-project exposed tasks; no sampling; counts and exclusions in the manifest. Projects needing native-extension builds (pandas, matplotlib, spacy) are outside the frame; statement rule requires a linked issue; initial prompt bound <= 32000 bytes. These restrictions are reported as limits on generality. Funnel: planning/m1-main-r1/funnel-r2.json (501 BugsInPy bugs -> 75 tasks, all exclusion reasons recorded). Five fastapi tasks missing in r1 due to an overwritten sandbox summary were restored by regenerating their controls (sandbox-controls-r4).",
+ "model": "gpt-5.4-mini-2026-03-17, temperature 1, reasoning low, max 3000 output tokens, conservative byte input bound 96000 for every request.",
+ "procedure": {
+  "first_attempts": "Per task, R independent first attempts (manifest first_attempt_repetitions) from the initial snapshot with the reviewed runner (max 8 responses, RAW full test feedback).",
+  "natural_failure": "A first attempt whose final evaluation does not pass for any agent-caused reason: failing tests, broken build/import (invalid_execution with an agent-side reason), tool timeout, invalid test execution during the attempt, or context limit; integrity-flagged attempts are excluded. Subtypes (status/reason) are recorded and reported.",
+  "failure_record": "Transcript after the initial prompt with each message capped at 2000 chars (head+tail) and final evaluation output capped at 6000 chars; the agent's live feedback is never truncated.",
+  "lesson": "One strict structured lesson from statement + failure record; if over the 96000-byte bound it is not sent (lesson_context_limit) and REFLECT/BOTH do not run for that instance.",
+  "retries": "One retry per available arm from the initial snapshot, order rotated by (task index + repetition); NONE prompt identical to the first attempt.",
+  "integrity": "Attempts that create/modify pytest configuration, conftest.py, .pth, site/usercustomize, or modules/packages shadowing pytest/_pytest/pluggy/py/the recorder are flagged and their outcome classified excluded_integrity (0 in ITT, dropped in complete-case). Also flagged: top-level *.dist-info/*.egg-info and newly created top-level modules/packages named like standard-library modules.",
+  "outcome_classification": "m1/run_main.classify: harness = provider/budget/infrastructure/invalid-action status, missing final evaluation, or invalid evaluation for a harness-side reason (malformed_record, invalid_test_manifest, invalid_hash_maps, test_integrity_unverified, unknown_timeout_status); excluded_integrity; resolved; unresolved. Only harness outcomes stop the stage.",
+  "output_truncation": "A settled model response with finish_reason other than 'stop' or a refusal (e.g. all 3000 output tokens spent on reasoning) is model behaviour: inside an attempt it ends the attempt with status output_limit (scored by the final evaluation, i.e. unresolved unless the workspace already passes); for a lesson it censors the lesson (lesson_output_limit; REFLECT/BOTH not run). It never stops the stage."
+ },
+ "analysis": "m1/score_main.py then m1/analyze_main.py exactly as frozen (seed 20261015, 10000 draws). Primary (estimation framing): ITT retry outcome resolved=1; unresolved (any agent-caused reason) and integrity-excluded=0; retries cut short by harness failures are missing. Four contrasts vs NONE: paired mean difference, 95% task-cluster bootstrap CI, task-level sign-flip permutation p, Holm. Non-significance is not evidence of no effect. Sensitivity: complete-case (drop context_limit and integrity), task-weighted means. Cost and wall-clock include the lesson call for REFLECT/BOTH. Report per-project instance counts, retry subtypes by arm, lesson status by first-attempt subtype. Descriptive B: lesson top-1/any-hit (lenient, strict) vs attempt-edit and traceback baselines (traceback functions via enclosing def in the attempt workspace), lesson-beyond-baseline, unsupported test/exception claims (name-level only; causal correctness not judged). Combined analysis: score_main --kept kept-tasks.json on the r2 output, score_main on the r3 output, combine_instances --frame <r2 frame manifest (75 tasks)> (exact coverage), analyze_main on the combined table (primary). Predeclared sensitivities: (1) r3-only instances; (2) combined excluding late-kept tasks (m1-main-inputs-r4/late-kept.json: kept tasks whose first request was within 3600 s of the r2 stop); (3) results reported separately by route (analyze_main on each route table), plus timeout/output_limit/context_limit subtypes, cost and wall-clock within route. Retry arm order follows each task's index in the r3 manifest (disclosed). Exact commands: score_main --kept m1-main-inputs-r4/kept-tasks.json <r2 scope> T2; score_main <r3 scope> T3; combine_instances --frame <m1-main-inputs-r2/manifest.json> C T2 T3 (primary); sensitivity (1) analyze_main T3; (2) combine_instances --frame <r2 manifest> --exclude m1-main-inputs-r4/late-kept.json C2 T2 T3; (3) analyze_main T2 and T3 separately. Second stop of r3: kept list K3 = all-complete prefix of the r3 dispatch order (make_resume_manifest on the r3 outputs); score_main --kept K3 <r3 scope> T3'; combine_instances --expected <kept-tasks.json + K3 as one list> C' T2 T3'; analysed as observed with incomplete coverage disclosed; no further resume without a new reviewed scope. FINAL (75 tasks): T2 = score_main --kept m1-main-inputs-r4/kept-tasks.json <review-r3 scope>; T3 = score_main --kept m1-main-inputs-r5-k3/kept-tasks.json <review-r6 scope>; T4 = score_main <review-r7 scope>; C = combine_instances --frame m1-main-inputs-r2/manifest.json C T2 T3 T4; analyze_main C (primary). Sensitivities: by route (T2, T3, T4 separately); combined excluding late-kept tasks (m1-main-inputs-r4/late-kept.json); 46-task first look reported as such. If r4 stops: prefix rule on r4 order (make_resume_manifest), --expected coverage, no further resume.",
+ "stops": [
+  "Only harness outcomes stop the stage (see procedure.outcome_classification): provider/transport/budget errors, invalid structured output, stale gate, harness-side invalid evaluation, infrastructure errors. Agent-caused tool timeouts, invalid test executions, broken builds, context limits and output truncation are scored, not stops."
+ ],
+ "budget": {
+  "stage_cap_usd": 25,
+  "cumulative_cap_usd": 160,
+  "ledger": "original runs/budget.sqlite",
+  "prior_main_spend_usd": {
+   "r1_excluded": 0.8393382,
+   "r2": 15.64889835,
+   "r2_pending_unsettled": 0.02733975
+  }
+ },
+ "records": [
+  "raw wire requests/responses",
+  "operations, lessons, failure records, signals, retry prompts",
+  "full tool logs, events, snapshots per attempt",
+  "ledger reconciliation (m1/reconcile.py)"
+ ],
+ "reporting": [
+  "First-attempt outcomes by status; failure-instance counts; arm availability and lesson censoring.",
+  "Effect sizes with CIs; null or negative results reported as such.",
+  "Tasks clustered by project as well as task; report per-project counts.",
+  "Final independent review before any claim."
+ ],
+ "stopped_run": "If the stage stops, completed tasks/instances are analysed as observed with the stop disclosed; no resumption without a new reviewed scope; unstarted attempts are missing, not failures.",
+ "precision": "Validity review r1 simulation: ~4 reps gave ~105 instances/~45 tasks, CI half-width ~0.10-0.11. Repetitions raised to 6 (expected ~150 instances); primary analysis is estimation.",
+ "amendments": [
+  "r2 after main review r1 (impl FAIL MAIN-IMPL-1/2; validity FAIL MV1/MV2): outcome classification, stop only on harness failures, missing-data treatment of harness-cut retries, regenerated fastapi controls and funnel, 6 repetitions, lesson cost/time in REFLECT/BOTH, task-weighted sensitivity, per-project counts, traceback function mapping, top-1 metrics, integrity additions, robust worker termination.",
+  "r3: output truncation/refusal reclassified as model behaviour (runner r3, provider ModelOutputIncomplete); new route; stops wording corrected (validity MV2-1, impl r2 minor 3); integrity wording: integrity-excluded counts 0 in ITT, dropped in complete-case.",
+  "r4: resume after ledger-lock harness stop; harness fixes; combined analysis; stage cap $40 on new route.",
+  "r5: prefix rule for kept set (validity r4 MV4-1); kept list scoring; frame coverage check; preregistered sensitivities; by-route reporting; second-stop rule; HTTP-error path pacing guard.",
+  "r6: combine --exclude accepts late-kept.json and validates task ids/presence; --expected for second-stop analysis; kept task without row raises; HTTP-error pacing lock artifact; exact analysis commands.",
+  "r7: completion route r4 with circuit breaker (missing-attempt semantics for transient provider errors), stage cap $25, final 75-task analysis commands, optional-stopping disclosure.",
+  "r8: evidence-based transient classification (main review r7 MV7-1/IMPL-R7-1), 400 not fatal (IMPL-R7-2), stop-marker check in fatal wait, cost/seconds exclude missing arms, lesson status counts, missing-arm bounds, optional-stopping reporting rules."
+ ],
+ "partial_run": "Route afm-m1-main-r1 (review-r2 scope) stopped after 238 calls ($0.8393382) on an output truncation then classified as a harness stop. Decided before inspecting any outcome: retained and disclosed, excluded from all analyses; this r3 scope reruns the full frame under route afm-m1-main-r2.",
+ "resume": "Route afm-m1-main-r2 stopped on a harness bug (shared-ledger SQLite lock; 4527 calls). Kept = longest all-complete prefix of dispatch order (24 tasks; m1-main-inputs-r4/kept-tasks.json). Rerun in full under afm-m1-main-r3: the other 51 tasks (manifest m1-main-inputs-r4), including 3 tasks that overtook and completed in r2 (their r2 data discarded and disclosed). Harness fixes only (lock timeout 120 s; pacing-state write after raw persistence and non-fatal, also on the HTTP-error path; 4 workers). If r3 stops again: the same prefix rule on the r3 dispatch order; no further resumption without a new reviewed scope.",
+ "disclosures": [
+  "Retry arm rotation k=(manifest index + rep) % 5 uses each rerun task's r3 manifest index (shifted by 24 vs r2).",
+  "Routes differ in date and worker count (r2: 6 workers; r3: 4)."
+ ],
+ "continuation_r4": "Route afm-m1-main-r3 stopped on a transient HTTP 400 (2048 calls, $6.2177337 + $0.0194775 pending). Frozen second-stop rule applied: K3 = 22-task all-complete prefix; 46 tasks analysed as a first look (planning/m1-main-r1/analysis-46/). The user then chose to complete the planned 75-task frame: the remaining 29 tasks (incl. overtakers thefuck/17, thefuck/18, thefuck/2 whose r3 data are discarded) run under afm-m1-main-r4 (manifest m1-main-inputs-r5-k3, 4 workers, stage cap $25). This continuation was decided after seeing the 46-task results (optional-stopping disclosure); both the 46-task first look and the final 75-task analysis are reported.",
+ "circuit_breaker": "Route r4 only. A runner provider error counts as an isolated TRANSIENT event only with transport evidence for the failing call: an HTTP error artifact with status in {400,408,409,429,500,502,503,504}, ledger status uncertain_transport_error, or a pacing deferral recorded before any request. Then only that attempt (first attempt -> repetition missing; retry -> arm missing) or lesson (lesson_harness -> REFLECT/BOTH not run) is missing and the stage continues; each event records http_status, error_code, ledger status, call and arm. Everything else stops the stage: invalid structured output or lesson, missing content/usage, snapshot mismatch, settle errors, pre-request fatal blocks, budget stops, infrastructure errors, harness-side invalid evaluation; also 3 transient events stage-wide. HTTP 400 no longer sets the shared fatal provider state (401/403/404/insufficient_quota still do). Before each attempt a worker waits up to 600 s for a fatal state to clear (checking the stop marker), else stops.",
+ "optional_stopping": "Primary analysis = combined 75-task frame (preregistered). The paper states the continuation was decided after seeing the 46-task results, reports the 46-task first look in full (pinned: planning/m1-main-r1/analysis-46-pins.json), describes p-values as nominal (no interim-look adjustment; optional Bonferroni alpha/2 sensitivity), and does not present r4 as confirmation.",
+ "missing_data": "Missing (harness) attempts/lessons/arms are counted per arm; if any retry arm is missing, bounds imputing missing arms as resolved and as unresolved are reported (analyze_main)."
+}

@@ -1,0 +1,6 @@
+Resolve the following issue reported for this repository.
+
+Issue title: HTTP1Connection cannot handle http/1.0 304 response
+
+When HTTP1Connection receive a http/1.0 304 response, `start_line` at 
+[this line](https://github.com/tornadoweb/tornado/blob/7a96bcf125740af78995b49526cbad688bfba796/tornado/http1connection.py#L484) is `ResponseStartLine(version='HTTP/1.0', code=304, reason='Not Modified')`, and `_can_keep_alive` crash.

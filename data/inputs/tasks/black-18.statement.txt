@@ -1,0 +1,5 @@
+Resolve the following issue reported for this repository.
+
+Issue title: Line endings on Windows.
+
+Black outputs CRLF line endings on Windows even if the source file has Unix-style lines. It's possible to work around using for example Git configuration, but it would be nice if the behavior was configurable. Some of us like to keep Unix line endings even on Windows.

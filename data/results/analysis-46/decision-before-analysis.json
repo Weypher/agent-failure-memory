@@ -1,0 +1,5 @@
+{
+ "recorded_before_any_m1_main_analysis": true,
+ "user_decision": "Analyse the 46 analysable tasks first; decide afterwards whether to run the remaining 29.",
+ "optional_stopping_disclosure": "Any continuation decided after seeing these results is outcome-dependent (optional stopping): the 46-task analysis must be reported as the first-look result, the continuation needs a new reviewed scope, and both analyses must be disclosed."
+}

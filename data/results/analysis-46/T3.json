@@ -1,0 +1,5535 @@
+{
+ "kind": "MAIN_INSTANCE_TABLE",
+ "first_attempts": [
+  {
+   "task": "httpie/5",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 83.51177761999134,
+   "cost_nusd": 22989900
+  },
+  {
+   "task": "httpie/5",
+   "rep": 2,
+   "status": "output_limit",
+   "outcome": "unresolved",
+   "subtype": "output_limit",
+   "resolved": null,
+   "integrity_flags": [],
+   "responses": 3,
+   "seconds": 45.11032485200849,
+   "cost_nusd": 17169750
+  },
+  {
+   "task": "httpie/5",
+   "rep": 3,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 77.31089382700156,
+   "cost_nusd": 27639300
+  },
+  {
+   "task": "httpie/5",
+   "rep": 4,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 94.39919894600462,
+   "cost_nusd": 38698800
+  },
+  {
+   "task": "httpie/5",
+   "rep": 5,
+   "status": "invalid_test_execution",
+   "outcome": "unresolved",
+   "subtype": "invalid_test_execution/non_test_exit",
+   "resolved": null,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 70.89511294099793,
+   "cost_nusd": 19839900
+  },
+  {
+   "task": "httpie/5",
+   "rep": 6,
+   "status": "output_limit",
+   "outcome": "unresolved",
+   "subtype": "output_limit",
+   "resolved": null,
+   "integrity_flags": [],
+   "responses": 3,
+   "seconds": 45.340378257998964,
+   "cost_nusd": 19574250
+  },
+  {
+   "task": "keras/33",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 55.644833795988234,
+   "cost_nusd": 16767150
+  },
+  {
+   "task": "keras/33",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 40.85270169399155,
+   "cost_nusd": 9761400
+  },
+  {
+   "task": "keras/33",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 51.19820769299986,
+   "cost_nusd": 11287350
+  },
+  {
+   "task": "keras/33",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 41.48281842799042,
+   "cost_nusd": 9578550
+  },
+  {
+   "task": "keras/33",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 40.47011347900843,
+   "cost_nusd": 13029900
+  },
+  {
+   "task": "keras/33",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 66.57880649599247,
+   "cost_nusd": 15800550
+  },
+  {
+   "task": "luigi/23",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 75.88654202700127,
+   "cost_nusd": 25272900
+  },
+  {
+   "task": "luigi/23",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 68.79352673400717,
+   "cost_nusd": 24148950
+  },
+  {
+   "task": "luigi/23",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 69.12039174200618,
+   "cost_nusd": 22657050
+  },
+  {
+   "task": "luigi/23",
+   "rep": 4,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 71.59664929599967,
+   "cost_nusd": 26980200
+  },
+  {
+   "task": "luigi/23",
+   "rep": 5,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 70.47564126900397,
+   "cost_nusd": 23417700
+  },
+  {
+   "task": "luigi/23",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 17.381869605000247,
+   "cost_nusd": 10113150
+  },
+  {
+   "task": "luigi/3",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 54.77309062499262,
+   "cost_nusd": 9971250
+  },
+  {
+   "task": "luigi/3",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 83.33966396200412,
+   "cost_nusd": 11683500
+  },
+  {
+   "task": "luigi/3",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 41.249538829011726,
+   "cost_nusd": 7044300
+  },
+  {
+   "task": "luigi/3",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 13.670212928002002,
+   "cost_nusd": 6369150
+  },
+  {
+   "task": "luigi/3",
+   "rep": 5,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 73.13471339899115,
+   "cost_nusd": 11932350
+  },
+  {
+   "task": "luigi/3",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 71.94278906399268,
+   "cost_nusd": 10065300
+  },
+  {
+   "task": "luigi/32",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 51.82568202300172,
+   "cost_nusd": 7463250
+  },
+  {
+   "task": "luigi/32",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 26.86704056400049,
+   "cost_nusd": 6731100
+  },
+  {
+   "task": "luigi/32",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 47.090898502996424,
+   "cost_nusd": 6256200
+  },
+  {
+   "task": "luigi/32",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 65.2934990789945,
+   "cost_nusd": 17813250
+  },
+  {
+   "task": "luigi/32",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 71.94332216998737,
+   "cost_nusd": 11908500
+  },
+  {
+   "task": "luigi/32",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 41.17308995699568,
+   "cost_nusd": 6360150
+  },
+  {
+   "task": "luigi/5",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 48.47171205400082,
+   "cost_nusd": 19932600
+  },
+  {
+   "task": "luigi/5",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 70.96590506698703,
+   "cost_nusd": 22501050
+  },
+  {
+   "task": "luigi/5",
+   "rep": 3,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 70.17495572200278,
+   "cost_nusd": 21724200
+  },
+  {
+   "task": "luigi/5",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 51.3107905700017,
+   "cost_nusd": 17348850
+  },
+  {
+   "task": "luigi/5",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 61.806840535995434,
+   "cost_nusd": 19510500
+  },
+  {
+   "task": "luigi/5",
+   "rep": 6,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 69.91964920899773,
+   "cost_nusd": 24624900
+  },
+  {
+   "task": "luigi/9",
+   "rep": 1,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 96.45041075599147,
+   "cost_nusd": 31717500
+  },
+  {
+   "task": "luigi/9",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 17.512261729993043,
+   "cost_nusd": 12449250
+  },
+  {
+   "task": "luigi/9",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 17.525665082008345,
+   "cost_nusd": 11886750
+  },
+  {
+   "task": "luigi/9",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 72.00370014300279,
+   "cost_nusd": 36782250
+  },
+  {
+   "task": "luigi/9",
+   "rep": 5,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 84.6891823830083,
+   "cost_nusd": 27810150
+  },
+  {
+   "task": "luigi/9",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 88.00975626498985,
+   "cost_nusd": 28051650
+  },
+  {
+   "task": "sanic/2",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 45.238864311002544,
+   "cost_nusd": 9108900
+  },
+  {
+   "task": "sanic/2",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 53.533157550991746,
+   "cost_nusd": 12446100
+  },
+  {
+   "task": "sanic/2",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 58.55299166300392,
+   "cost_nusd": 15930750
+  },
+  {
+   "task": "sanic/2",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 91.53136012899631,
+   "cost_nusd": 12927900
+  },
+  {
+   "task": "sanic/2",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 51.83344715500425,
+   "cost_nusd": 11459400
+  },
+  {
+   "task": "sanic/2",
+   "rep": 6,
+   "status": "context_limit",
+   "outcome": "unresolved",
+   "subtype": "context_limit",
+   "resolved": null,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 29.432903744003852,
+   "cost_nusd": 15102450
+  },
+  {
+   "task": "sanic/3",
+   "rep": 1,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit/pytest_did_not_return",
+   "resolved": null,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 66.06348177199834,
+   "cost_nusd": 18740550
+  },
+  {
+   "task": "sanic/3",
+   "rep": 2,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 68.65703284800111,
+   "cost_nusd": 14587650
+  },
+  {
+   "task": "sanic/3",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 84.3570650259935,
+   "cost_nusd": 13971000
+  },
+  {
+   "task": "sanic/3",
+   "rep": 4,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 88.95820876500511,
+   "cost_nusd": 25440150
+  },
+  {
+   "task": "sanic/3",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 86.63483313500183,
+   "cost_nusd": 22414050
+  },
+  {
+   "task": "sanic/3",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 66.00251702799869,
+   "cost_nusd": 23347950
+  },
+  {
+   "task": "sanic/5",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 45.53282926999964,
+   "cost_nusd": 8752500
+  },
+  {
+   "task": "sanic/5",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 65.9684864860028,
+   "cost_nusd": 14464500
+  },
+  {
+   "task": "sanic/5",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 65.39573068299796,
+   "cost_nusd": 15981600
+  },
+  {
+   "task": "sanic/5",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 44.41604829899734,
+   "cost_nusd": 11898150
+  },
+  {
+   "task": "sanic/5",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 47.42553996799688,
+   "cost_nusd": 10846350
+  },
+  {
+   "task": "sanic/5",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 51.40534289900097,
+   "cost_nusd": 9914850
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 27.649927507009124,
+   "cost_nusd": 8972850
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 63.00486113000079,
+   "cost_nusd": 11171700
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 42.69365034200018,
+   "cost_nusd": 10228500
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 47.12843876199622,
+   "cost_nusd": 10294500
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 52.3139096149971,
+   "cost_nusd": 16075050
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 83.93370524099737,
+   "cost_nusd": 16617900
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 68.82251802600513,
+   "cost_nusd": 20773950
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 2,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 77.96477576799225,
+   "cost_nusd": 15360450
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 3,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 82.65929422399495,
+   "cost_nusd": 22222950
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 46.914484147011535,
+   "cost_nusd": 10480500
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 14.107250617002137,
+   "cost_nusd": 4804650
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 6,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 81.72458650499175,
+   "cost_nusd": 17444550
+  },
+  {
+   "task": "scrapy/19",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 32.6651696839981,
+   "cost_nusd": 9679950
+  },
+  {
+   "task": "scrapy/19",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 44.89487640898733,
+   "cost_nusd": 8784300
+  },
+  {
+   "task": "scrapy/19",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 37.160171995012206,
+   "cost_nusd": 7868700
+  },
+  {
+   "task": "scrapy/19",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 36.81284484900243,
+   "cost_nusd": 14405700
+  },
+  {
+   "task": "scrapy/19",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 39.4490122290008,
+   "cost_nusd": 8579250
+  },
+  {
+   "task": "scrapy/19",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 44.745504515987705,
+   "cost_nusd": 9252750
+  },
+  {
+   "task": "scrapy/20",
+   "rep": 1,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 79.00532962099533,
+   "cost_nusd": 14743350
+  },
+  {
+   "task": "scrapy/20",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 65.41586200801248,
+   "cost_nusd": 9190200
+  },
+  {
+   "task": "scrapy/20",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 39.6400037019921,
+   "cost_nusd": 5278350
+  },
+  {
+   "task": "scrapy/20",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 29.64835514999868,
+   "cost_nusd": 5178600
+  },
+  {
+   "task": "scrapy/20",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 48.09049031000177,
+   "cost_nusd": 7431150
+  },
+  {
+   "task": "scrapy/20",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 31.950433058998897,
+   "cost_nusd": 5207100
+  },
+  {
+   "task": "scrapy/21",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 42.931794932999765,
+   "cost_nusd": 8822850
+  },
+  {
+   "task": "scrapy/21",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 55.414832957001636,
+   "cost_nusd": 17086950
+  },
+  {
+   "task": "scrapy/21",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 38.19610881600238,
+   "cost_nusd": 12354450
+  },
+  {
+   "task": "scrapy/21",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 37.07050655600324,
+   "cost_nusd": 12761250
+  },
+  {
+   "task": "scrapy/21",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 68.93159067200031,
+   "cost_nusd": 19124550
+  },
+  {
+   "task": "scrapy/21",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 45.23476173100062,
+   "cost_nusd": 13304250
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 1,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 80.17386968199571,
+   "cost_nusd": 25490700
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 84.97964964300627,
+   "cost_nusd": 18638850
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 43.33860457901028,
+   "cost_nusd": 9587850
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 43.59459040900401,
+   "cost_nusd": 10337100
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 54.0850285810011,
+   "cost_nusd": 10868700
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 7,
+   "seconds": 83.47979211900383,
+   "cost_nusd": 19883550
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 48.95840281400888,
+   "cost_nusd": 11648850
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 2,
+   "status": "response_limit",
+   "outcome": "unresolved",
+   "subtype": "response_limit",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 74.61189251299948,
+   "cost_nusd": 16189650
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 14.554309918996296,
+   "cost_nusd": 5514750
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 44.083191172001534,
+   "cost_nusd": 10407300
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 14.455830612001591,
+   "cost_nusd": 6140250
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 14.59681364199787,
+   "cost_nusd": 10118250
+  },
+  {
+   "task": "scrapy/37",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 38.41476624799543,
+   "cost_nusd": 10633050
+  },
+  {
+   "task": "scrapy/37",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 42.41124908499478,
+   "cost_nusd": 10659900
+  },
+  {
+   "task": "scrapy/37",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 34.77122528600739,
+   "cost_nusd": 12145800
+  },
+  {
+   "task": "scrapy/37",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 81.78028641900164,
+   "cost_nusd": 20888700
+  },
+  {
+   "task": "scrapy/37",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 27.45472385500034,
+   "cost_nusd": 10600050
+  },
+  {
+   "task": "scrapy/37",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 35.29515115899267,
+   "cost_nusd": 11457450
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 74.6876007039973,
+   "cost_nusd": 10619700
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "unresolved",
+   "subtype": "declared_done",
+   "resolved": false,
+   "integrity_flags": [],
+   "responses": 1,
+   "seconds": 21.38892838700849,
+   "cost_nusd": 13110750
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 59.257917132999864,
+   "cost_nusd": 17692050
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 52.81932353999582,
+   "cost_nusd": 11468850
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 51.998250026997994,
+   "cost_nusd": 11161350
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 52.47104255200247,
+   "cost_nusd": 10563450
+  },
+  {
+   "task": "scrapy/4",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 46.02327821998915,
+   "cost_nusd": 9491400
+  },
+  {
+   "task": "scrapy/4",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 39.69119647300977,
+   "cost_nusd": 7647750
+  },
+  {
+   "task": "scrapy/4",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 40.26723373599816,
+   "cost_nusd": 9968250
+  },
+  {
+   "task": "scrapy/4",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 65.51842855900759,
+   "cost_nusd": 14992200
+  },
+  {
+   "task": "scrapy/4",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 41.256656072000624,
+   "cost_nusd": 6573900
+  },
+  {
+   "task": "scrapy/4",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 42.39870600300492,
+   "cost_nusd": 5516850
+  },
+  {
+   "task": "scrapy/9",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 38.733818755994434,
+   "cost_nusd": 7152900
+  },
+  {
+   "task": "scrapy/9",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 35.438864007010125,
+   "cost_nusd": 9647400
+  },
+  {
+   "task": "scrapy/9",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 33.645613136992324,
+   "cost_nusd": 7338750
+  },
+  {
+   "task": "scrapy/9",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 84.09549281299405,
+   "cost_nusd": 22489950
+  },
+  {
+   "task": "scrapy/9",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 38.69232379300229,
+   "cost_nusd": 10834800
+  },
+  {
+   "task": "scrapy/9",
+   "rep": 6,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 4,
+   "seconds": 50.510879268011195,
+   "cost_nusd": 10729050
+  },
+  {
+   "task": "thefuck/14",
+   "rep": 1,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 73.41002916000434,
+   "cost_nusd": 15311550
+  },
+  {
+   "task": "thefuck/14",
+   "rep": 2,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 6,
+   "seconds": 51.70109834900359,
+   "cost_nusd": 11347050
+  },
+  {
+   "task": "thefuck/14",
+   "rep": 3,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 83.81949058000464,
+   "cost_nusd": 20198400
+  },
+  {
+   "task": "thefuck/14",
+   "rep": 4,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 38.30027337701176,
+   "cost_nusd": 8756700
+  },
+  {
+   "task": "thefuck/14",
+   "rep": 5,
+   "status": "declared_done",
+   "outcome": "resolved",
+   "subtype": "declared_done",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 5,
+   "seconds": 51.53775529899576,
+   "cost_nusd": 8355900
+  },
+  {
+   "task": "thefuck/14",
+   "rep": 6,
+   "status": "response_limit",
+   "outcome": "resolved",
+   "subtype": "response_limit",
+   "resolved": true,
+   "integrity_flags": [],
+   "responses": 8,
+   "seconds": 60.16326208499959,
+   "cost_nusd": 26911800
+  }
+ ],
+ "instances": [
+  {
+   "task": "httpie/5",
+   "rep": 2,
+   "a1_status": "output_limit",
+   "a1_subtype": "output_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit/non_test_exit",
+     "resolved": null,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 90.14597985499131,
+     "cost_nusd": 33846000
+    },
+    "HISTORY": {
+     "status": "invalid_test_execution",
+     "outcome": "unresolved",
+     "subtype": "invalid_test_execution/non_test_exit",
+     "resolved": null,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 63.7532359080069,
+     "cost_nusd": 21854550
+    },
+    "NONE": {
+     "status": "output_limit",
+     "outcome": "unresolved",
+     "subtype": "output_limit",
+     "resolved": null,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 28.072653866009205,
+     "cost_nusd": 13938000
+    },
+    "REFLECT": {
+     "status": "invalid_test_execution",
+     "outcome": "unresolved",
+     "subtype": "invalid_test_execution/non_test_exit",
+     "resolved": null,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 56.08181338899885,
+     "cost_nusd": 19802250
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 84.84536391100846,
+     "cost_nusd": 29565450
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 2815500
+  },
+  {
+   "task": "httpie/5",
+   "rep": 3,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 92.02541031100554,
+     "cost_nusd": 40121100
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 3,
+     "integrity_flags": [],
+     "seconds": 35.406045841999,
+     "cost_nusd": 22041000
+    },
+    "NONE": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 66.78050490400346,
+     "cost_nusd": 27453150
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit/non_test_exit",
+     "resolved": null,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 97.66690670698881,
+     "cost_nusd": 38075700
+    },
+    "SIGNAL": {
+     "status": "invalid_test_execution",
+     "outcome": "unresolved",
+     "subtype": "invalid_test_execution/non_test_exit",
+     "resolved": null,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 82.32160584999656,
+     "cost_nusd": 37025700
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 8051250
+  },
+  {
+   "task": "httpie/5",
+   "rep": 4,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit/non_test_exit",
+     "resolved": null,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 99.44395658701251,
+     "cost_nusd": 36397500
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 71.92094481499225,
+     "cost_nusd": 30294000
+    },
+    "NONE": {
+     "status": "output_limit",
+     "outcome": "unresolved",
+     "subtype": "output_limit",
+     "resolved": null,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 28.317764951003483,
+     "cost_nusd": 17247750
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 89.06482495400996,
+     "cost_nusd": 43649700
+    },
+    "SIGNAL": {
+     "status": "output_limit",
+     "outcome": "unresolved",
+     "subtype": "output_limit",
+     "resolved": null,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 35.43750205599645,
+     "cost_nusd": 17727750
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 7050750
+  },
+  {
+   "task": "httpie/5",
+   "rep": 5,
+   "a1_status": "invalid_test_execution",
+   "a1_subtype": "invalid_test_execution/non_test_exit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 4,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "invalid_test_execution",
+     "outcome": "unresolved",
+     "subtype": "invalid_test_execution/non_test_exit",
+     "resolved": null,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 88.30205784499412,
+     "cost_nusd": 25514850
+    },
+    "HISTORY": {
+     "status": "invalid_test_execution",
+     "outcome": "unresolved",
+     "subtype": "invalid_test_execution/non_test_exit",
+     "resolved": null,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 17.67620829900261,
+     "cost_nusd": 5686200
+    },
+    "NONE": {
+     "status": "output_limit",
+     "outcome": "unresolved",
+     "subtype": "output_limit",
+     "resolved": null,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 39.764652979007224,
+     "cost_nusd": 17156250
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit/non_test_exit",
+     "resolved": null,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 107.64459021198854,
+     "cost_nusd": 23002500
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 81.98995499200828,
+     "cost_nusd": 27705900
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 4055250
+  },
+  {
+   "task": "httpie/5",
+   "rep": 6,
+   "a1_status": "output_limit",
+   "a1_subtype": "output_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 117.16162110499863,
+     "cost_nusd": 49778550
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 77.29030087401043,
+     "cost_nusd": 27880950
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 55.89223310200032,
+     "cost_nusd": 16078500
+    },
+    "REFLECT": {
+     "status": "output_limit",
+     "outcome": "unresolved",
+     "subtype": "output_limit",
+     "resolved": null,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 34.50568096798088,
+     "cost_nusd": 17860500
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit/non_test_exit",
+     "resolved": null,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 87.3245636520005,
+     "cost_nusd": 31450050
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "httpie/cli.py"
+    ],
+    "reference_functions": [
+     "KeyValueType.__call__",
+     "KeyValueType.__init__"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3546750
+  },
+  {
+   "task": "luigi/23",
+   "rep": 5,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/interface.py",
+     "luigi/scheduler.py"
+    ],
+    "reference_functions": [
+     "CentralPlannerScheduler.get_work",
+     "Worker.__init__",
+     "WorkerSchedulerFactory.create_local_scheduler"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": true,
+    "function_hit_strict": false,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "luigi/interface.py",
+     "luigi/scheduler.py"
+    ],
+    "reference_functions": [
+     "CentralPlannerScheduler.get_work",
+     "Worker.__init__",
+     "WorkerSchedulerFactory.create_local_scheduler"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 86.55487433398957,
+     "cost_nusd": 27863100
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 3,
+     "integrity_flags": [],
+     "seconds": 29.468126688007032,
+     "cost_nusd": 10590900
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 17.15678633400239,
+     "cost_nusd": 8641650
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 76.1628246709879,
+     "cost_nusd": 21871350
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 86.42351604100259,
+     "cost_nusd": 23643150
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "luigi/interface.py",
+     "luigi/scheduler.py"
+    ],
+    "reference_functions": [
+     "CentralPlannerScheduler.get_work",
+     "Worker.__init__",
+     "WorkerSchedulerFactory.create_local_scheduler"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6244500
+  },
+  {
+   "task": "luigi/23",
+   "rep": 6,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/interface.py",
+     "luigi/scheduler.py"
+    ],
+    "reference_functions": [
+     "CentralPlannerScheduler.get_work",
+     "Worker.__init__",
+     "WorkerSchedulerFactory.create_local_scheduler"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": true,
+    "function_hit_strict": false,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "luigi/interface.py",
+     "luigi/scheduler.py"
+    ],
+    "reference_functions": [
+     "CentralPlannerScheduler.get_work",
+     "Worker.__init__",
+     "WorkerSchedulerFactory.create_local_scheduler"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 83.55617661400174,
+     "cost_nusd": 25025250
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 49.74236287800886,
+     "cost_nusd": 15824250
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 18.01760567900783,
+     "cost_nusd": 8412150
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 84.39428519399371,
+     "cost_nusd": 27383100
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 79.89882193000813,
+     "cost_nusd": 29464950
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": true,
+    "function_hit_strict": false,
+    "function_precision": 0.25,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 4,
+    "reference_files": [
+     "luigi/interface.py",
+     "luigi/scheduler.py"
+    ],
+    "reference_functions": [
+     "CentralPlannerScheduler.get_work",
+     "Worker.__init__",
+     "WorkerSchedulerFactory.create_local_scheduler"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3630000
+  },
+  {
+   "task": "luigi/3",
+   "rep": 1,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 77.02935785498994,
+     "cost_nusd": 30746400
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 43.66645668698766,
+     "cost_nusd": 9589350
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 31.407271310992655,
+     "cost_nusd": 5923800
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 68.5717961149785,
+     "cost_nusd": 20754900
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 82.06440837400442,
+     "cost_nusd": 22831950
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 2,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6636000
+  },
+  {
+   "task": "luigi/3",
+   "rep": 3,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 101.20213195099495,
+     "cost_nusd": 34796850
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 49.436257870009285,
+     "cost_nusd": 24527100
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 11.127451209991705,
+     "cost_nusd": 6513150
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 82.17215327298618,
+     "cost_nusd": 28872000
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 35.488386347991764,
+     "cost_nusd": 7737750
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 2,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 5335500
+  },
+  {
+   "task": "luigi/3",
+   "rep": 4,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 79.85107651799626,
+     "cost_nusd": 25183950
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 57.02341963601066,
+     "cost_nusd": 11985750
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 3,
+     "integrity_flags": [],
+     "seconds": 31.695674718997907,
+     "cost_nusd": 12786600
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 49.36884279300284,
+     "cost_nusd": 11754150
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 28.57185573100287,
+     "cost_nusd": 7487250
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "luigi/parameter.py"
+    ],
+    "reference_functions": [
+     "TupleParameter.parse"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3857250
+  },
+  {
+   "task": "luigi/9",
+   "rep": 2,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 95.36443314698408,
+     "cost_nusd": 31374150
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 78.93227552100143,
+     "cost_nusd": 33772650
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 76.75733866800147,
+     "cost_nusd": 39005550
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 89.59558248599933,
+     "cost_nusd": 31030650
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 82.31385958699684,
+     "cost_nusd": 43733550
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 5,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 2954250
+  },
+  {
+   "task": "luigi/9",
+   "rep": 3,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 99.67345440399367,
+     "cost_nusd": 43407750
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 71.33398464199854,
+     "cost_nusd": 39982800
+    },
+    "NONE": {
+     "status": "output_limit",
+     "outcome": "unresolved",
+     "subtype": "output_limit",
+     "resolved": null,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 21.269249764998676,
+     "cost_nusd": 14451750
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 85.0680906179914,
+     "cost_nusd": 36092250
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 77.60100716800662,
+     "cost_nusd": 28592100
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.25,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 4,
+    "n_suspected_functions": 5,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 2846250
+  },
+  {
+   "task": "luigi/9",
+   "rep": 5,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 87.54595536300621,
+     "cost_nusd": 45272700
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 89.54651060501055,
+     "cost_nusd": 37800450
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 29.385235941997962,
+     "cost_nusd": 13259250
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 102.31339618099446,
+     "cost_nusd": 53137050
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 76.33117238899285,
+     "cost_nusd": 24637350
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.2,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 5,
+    "reference_files": [
+     "luigi/execution_summary.py"
+    ],
+    "reference_functions": [
+     "_depth_first_search",
+     "_partition_tasks",
+     "_summary_format"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 7088250
+  },
+  {
+   "task": "sanic/2",
+   "rep": 6,
+   "a1_status": "context_limit",
+   "a1_subtype": "context_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "sanic/server.py"
+    ],
+    "reference_functions": [
+     "AsyncioServer.__await__",
+     "AsyncioServer.serve_forever",
+     "AsyncioServer.start_serving"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "sanic/server.py"
+    ],
+    "reference_functions": [
+     "AsyncioServer.__await__",
+     "AsyncioServer.serve_forever",
+     "AsyncioServer.start_serving"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 66.64013601299666,
+     "cost_nusd": 11791350
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 17.999756079996587,
+     "cost_nusd": 6025500
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 47.56107246300962,
+     "cost_nusd": 9897150
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 91.43747515098948,
+     "cost_nusd": 18666000
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 64.28067511798872,
+     "cost_nusd": 14050800
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 4,
+    "reference_files": [
+     "sanic/server.py"
+    ],
+    "reference_functions": [
+     "AsyncioServer.__await__",
+     "AsyncioServer.serve_forever",
+     "AsyncioServer.start_serving"
+    ]
+   },
+   "claims": {
+    "test_claims": 3,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 5148750
+  },
+  {
+   "task": "sanic/3",
+   "rep": 1,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit/pytest_did_not_return",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 32.15816929799621,
+     "cost_nusd": 19495500
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 72.22511719800241,
+     "cost_nusd": 34748250
+    },
+    "NONE": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 67.51905193799757,
+     "cost_nusd": 24524850
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 81.26008623799135,
+     "cost_nusd": 30876600
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 78.37681074799912,
+     "cost_nusd": 26081250
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 7224750
+  },
+  {
+   "task": "sanic/3",
+   "rep": 2,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 99.19814504499664,
+     "cost_nusd": 33524850
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 79.56826853299572,
+     "cost_nusd": 23756100
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 53.40143500299018,
+     "cost_nusd": 21351450
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 71.14003575399693,
+     "cost_nusd": 30647550
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 73.37072470098792,
+     "cost_nusd": 19587600
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6563250
+  },
+  {
+   "task": "sanic/3",
+   "rep": 6,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 75.85168284999963,
+     "cost_nusd": 33270000
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 50.487694234005176,
+     "cost_nusd": 14137050
+    },
+    "NONE": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 75.52097176499956,
+     "cost_nusd": 19685400
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 100.79021440599172,
+     "cost_nusd": 40223400
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 2,
+     "integrity_flags": [],
+     "seconds": 27.089037705998635,
+     "cost_nusd": 12673500
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.25,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.16666666666666666,
+    "n_suspected_files": 4,
+    "n_suspected_functions": 6,
+    "reference_files": [
+     "sanic/app.py"
+    ],
+    "reference_functions": [
+     "Sanic.url_for"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6615000
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 1,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/utils/url.py"
+    ],
+    "reference_functions": [
+     "_safe_ParseResult"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/utils/url.py"
+    ],
+    "reference_functions": [
+     "_safe_ParseResult"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 61.920952692002174,
+     "cost_nusd": 24469800
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 54.434124905004865,
+     "cost_nusd": 15563100
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 61.14308577099291,
+     "cost_nusd": 13477800
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 54.2712398260046,
+     "cost_nusd": 18349350
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 63.24109716899693,
+     "cost_nusd": 15723000
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.25,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 4,
+    "reference_files": [
+     "scrapy/utils/url.py"
+    ],
+    "reference_functions": [
+     "_safe_ParseResult"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 2,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 5376750
+  },
+  {
+   "task": "scrapy/15",
+   "rep": 3,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/utils/url.py"
+    ],
+    "reference_functions": [
+     "_safe_ParseResult"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/utils/url.py"
+    ],
+    "reference_functions": [
+     "_safe_ParseResult"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 72.14921739899728,
+     "cost_nusd": 32442900
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 44.60382703501091,
+     "cost_nusd": 12654750
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 3,
+     "integrity_flags": [],
+     "seconds": 34.63434343400877,
+     "cost_nusd": 7298100
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 95.93022039299831,
+     "cost_nusd": 44268000
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 45.787850267995964,
+     "cost_nusd": 11675400
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.2,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.25,
+    "n_suspected_files": 5,
+    "n_suspected_functions": 4,
+    "reference_files": [
+     "scrapy/utils/url.py"
+    ],
+    "reference_functions": [
+     "_safe_ParseResult"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 5387250
+  },
+  {
+   "task": "scrapy/18",
+   "rep": 5,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/responsetypes.py"
+    ],
+    "reference_functions": [
+     "ResponseTypes.from_content_disposition"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.3333333333333333,
+    "function_hit": true,
+    "function_hit_strict": false,
+    "function_precision": 0.5,
+    "n_suspected_files": 3,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/responsetypes.py"
+    ],
+    "reference_functions": [
+     "ResponseTypes.from_content_disposition"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 72.90404897599365,
+     "cost_nusd": 23458500
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 78.82393294900248,
+     "cost_nusd": 23583750
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 80.38519186001213,
+     "cost_nusd": 21257100
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 78.16847217499162,
+     "cost_nusd": 20348100
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 80.571704365997,
+     "cost_nusd": 18944100
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "scrapy/responsetypes.py"
+    ],
+    "reference_functions": [
+     "ResponseTypes.from_content_disposition"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3566250
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 1,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 78.84368687999086,
+     "cost_nusd": 34774950
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 82.88573934399756,
+     "cost_nusd": 32552100
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 34.187880123005016,
+     "cost_nusd": 8691900
+    },
+    "REFLECT": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 95.98291405499913,
+     "cost_nusd": 26729700
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 82.38506891700672,
+     "cost_nusd": 18344100
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.6666666666666666,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "claims": {
+    "test_claims": 3,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 7232250
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 3,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 110.51744816599239,
+     "cost_nusd": 32873400
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 89.80614755800343,
+     "cost_nusd": 21583050
+    },
+    "NONE": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 84.44948503701016,
+     "cost_nusd": 23818650
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 54.75024141899485,
+     "cost_nusd": 15906000
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 71.35538171400549,
+     "cost_nusd": 19989750
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "claims": {
+    "test_claims": 2,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 5727750
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 4,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 61.71873151400359,
+     "cost_nusd": 14922000
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 86.95515562799119,
+     "cost_nusd": 25763100
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 58.35380847600754,
+     "cost_nusd": 11230050
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 87.38432752000517,
+     "cost_nusd": 26255700
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 73.96545170800528,
+     "cost_nusd": 18333450
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3867000
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 5,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 77.66451653100376,
+     "cost_nusd": 31038900
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 43.82379809700069,
+     "cost_nusd": 9480900
+    },
+    "NONE": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 89.54268923199561,
+     "cost_nusd": 17662200
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 64.1870205180021,
+     "cost_nusd": 20637450
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 90.33274868500303,
+     "cost_nusd": 49176450
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "claims": {
+    "test_claims": 2,
+    "unsupported_test_claims": [],
+    "error_claims": 1,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 4748250
+  },
+  {
+   "task": "scrapy/25",
+   "rep": 6,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 55.60390204600117,
+     "cost_nusd": 18851550
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 83.99239204800688,
+     "cost_nusd": 32005650
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 54.35139734800032,
+     "cost_nusd": 13351500
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 51.39846089700586,
+     "cost_nusd": 16977150
+    },
+    "SIGNAL": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 89.97429335000925,
+     "cost_nusd": 17333100
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/http/request/form.py"
+    ],
+    "reference_functions": [
+     "_get_form",
+     "_get_form_url"
+    ]
+   },
+   "claims": {
+    "test_claims": 3,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6358500
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 1,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 50.41170587201486,
+     "cost_nusd": 15531600
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 58.785069088989985,
+     "cost_nusd": 19293900
+    },
+    "NONE": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 84.78503786500369,
+     "cost_nusd": 20363250
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 56.25892702801502,
+     "cost_nusd": 15542100
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 42.84337080299156,
+     "cost_nusd": 12483150
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": false,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 4720500
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 2,
+   "a1_status": "response_limit",
+   "a1_subtype": "response_limit",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 71.05434556699765,
+     "cost_nusd": 20381850
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 93.5308434519975,
+     "cost_nusd": 26440950
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 32.08210564800538,
+     "cost_nusd": 7066950
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 59.42877185299585,
+     "cost_nusd": 18052350
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 45.42716935600038,
+     "cost_nusd": 12465000
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.25,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 4,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "claims": {
+    "test_claims": 2,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6028500
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 3,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 95.92061860499962,
+     "cost_nusd": 27030600
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 56.91197252699931,
+     "cost_nusd": 15613950
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 48.059504268996534,
+     "cost_nusd": 13199100
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 58.55849991500145,
+     "cost_nusd": 14491200
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 43.319241856996086,
+     "cost_nusd": 11170950
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.2,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 5,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "claims": {
+    "test_claims": 2,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3291000
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 4,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 1.0,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 1.0,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 48.421232378997956,
+     "cost_nusd": 16258350
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "resolved",
+     "subtype": "response_limit",
+     "resolved": true,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 93.67649858799996,
+     "cost_nusd": 18684000
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 35.97744275700825,
+     "cost_nusd": 8165700
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 6,
+     "integrity_flags": [],
+     "seconds": 67.8204386819998,
+     "cost_nusd": 31028400
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 43.1848344559985,
+     "cost_nusd": 11073450
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": false,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": false,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 6250500
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 5,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 99.99161763698794,
+     "cost_nusd": 24809550
+    },
+    "HISTORY": {
+     "status": "response_limit",
+     "outcome": "unresolved",
+     "subtype": "response_limit",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 92.32253049899009,
+     "cost_nusd": 16127250
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 42.11494948799373,
+     "cost_nusd": 11472000
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 8,
+     "integrity_flags": [],
+     "seconds": 91.61559068899078,
+     "cost_nusd": 44152500
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 46.58829394400527,
+     "cost_nusd": 12794100
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "claims": {
+    "test_claims": 0,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3961500
+  },
+  {
+   "task": "scrapy/3",
+   "rep": 6,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 1,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 5,
+     "integrity_flags": [],
+     "seconds": 78.0344136210042,
+     "cost_nusd": 18956550
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 49.435428917000536,
+     "cost_nusd": 10542900
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 22.38532445000601,
+     "cost_nusd": 12818250
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 57.19914280201192,
+     "cost_nusd": 14189100
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 40.838988644987694,
+     "cost_nusd": 8311350
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.3333333333333333,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 3,
+    "reference_files": [
+     "scrapy/downloadermiddlewares/redirect.py"
+    ],
+    "reference_functions": [
+     "RedirectMiddleware.process_response"
+    ]
+   },
+   "claims": {
+    "test_claims": 2,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 3147000
+  },
+  {
+   "task": "scrapy/39",
+   "rep": 2,
+   "a1_status": "declared_done",
+   "a1_subtype": "declared_done",
+   "lesson_status": "valid",
+   "baseline_attempt": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": null,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": null,
+    "n_suspected_files": 0,
+    "n_suspected_functions": 0,
+    "reference_files": [
+     "scrapy/spiders/__init__.py"
+    ],
+    "reference_functions": [
+     "Spider.start_requests"
+    ]
+   },
+   "baseline_traceback": {
+    "top1_file_hit": false,
+    "top1_function_hit": false,
+    "file_hit": false,
+    "file_hit_strict": false,
+    "file_precision": 0.0,
+    "function_hit": false,
+    "function_hit_strict": false,
+    "function_precision": 0.0,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 1,
+    "reference_files": [
+     "scrapy/spiders/__init__.py"
+    ],
+    "reference_functions": [
+     "Spider.start_requests"
+    ]
+   },
+   "arms": {
+    "BOTH": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 90.25194932099839,
+     "cost_nusd": 22308300
+    },
+    "HISTORY": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 85.75940790699678,
+     "cost_nusd": 19953750
+    },
+    "NONE": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 4,
+     "integrity_flags": [],
+     "seconds": 44.01428584700625,
+     "cost_nusd": 10605750
+    },
+    "REFLECT": {
+     "status": "declared_done",
+     "outcome": "unresolved",
+     "subtype": "declared_done",
+     "resolved": false,
+     "responses": 1,
+     "integrity_flags": [],
+     "seconds": 28.898153223999543,
+     "cost_nusd": 12464250
+    },
+    "SIGNAL": {
+     "status": "declared_done",
+     "outcome": "resolved",
+     "subtype": "declared_done",
+     "resolved": true,
+     "responses": 7,
+     "integrity_flags": [],
+     "seconds": 62.2300220009929,
+     "cost_nusd": 12272700
+    }
+   },
+   "lesson": {
+    "top1_file_hit": true,
+    "top1_function_hit": true,
+    "file_hit": true,
+    "file_hit_strict": true,
+    "file_precision": 0.5,
+    "function_hit": true,
+    "function_hit_strict": true,
+    "function_precision": 0.5,
+    "n_suspected_files": 2,
+    "n_suspected_functions": 2,
+    "reference_files": [
+     "scrapy/spiders/__init__.py"
+    ],
+    "reference_functions": [
+     "Spider.start_requests"
+    ]
+   },
+   "claims": {
+    "test_claims": 1,
+    "unsupported_test_claims": [],
+    "error_claims": 0,
+    "unsupported_error_claims": [],
+    "any_unsupported": false
+   },
+   "lesson_cost_nusd": 2958750
+  }
+ ]
+}

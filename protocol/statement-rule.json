@@ -1,0 +1,20 @@
+{
+  "status": "DRAFT_RULE_TO_FREEZE_BEFORE_ANY_MODEL_OUTCOME",
+  "date": "2026-10-14",
+  "purpose": "Systematic, pre-specified task statements for BugsInPy tasks, replacing the old project's hand paraphrases.",
+  "source_priority": [
+    "Issue(s) the fix explicitly closes: closing keyword (fix/close/resolve #N) in the fixed-commit message, or in the title/body of the PR that the commit message references or that GitHub lists for the fixed commit.",
+    "Otherwise a sole plain #N reference in the fixed-commit message that resolves to an issue (not a PR)."
+  ],
+  "ineligible": [
+    "No linked issue (PR descriptions and commit messages describe the fix and are never used as statements).",
+    "Issue body contains any added line (>=20 chars, stripped) of the reference fix diff verbatim (solution leakage).",
+    "Combined statement longer than 8000 characters (recorded, not truncated)."
+  ],
+  "composition": "For each linked issue in ascending number: 'Issue title' line + body verbatim; HTML comments removed; nothing else added. A fixed common wrapper sentence identical for all tasks and arms.",
+  "provenance_recorded": ["issue URL", "API response sha256", "fixed commit", "rule version"],
+  "notes": [
+    "Issue text is a user report, as in SWE-bench; it can be vague or under-specified, which is realistic and equal across memory arms.",
+    "Eligibility is decided from provenance and environment controls only; never from model outcomes."
+  ]
+}
