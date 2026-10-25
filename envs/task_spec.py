@@ -13,7 +13,7 @@ sys.path.insert(0, str(HERE)); sys.path.insert(0, str(ROOT / 'runner'))
 import trial_build  # noqa: E402
 from repository_snapshot import capture  # noqa: E402
 
-BWRAP = '/home/ywb61/.local/share/budgeted-gate-fail-learning/tools/bubblewrap/usr/bin/bwrap'
+BWRAP = '/home/user/.local/share/budgeted-gate-fail-learning/tools/bubblewrap/usr/bin/bwrap'
 INSTRUMENTATION = trial_build.RUNTIME / 'instrumentation'
 RUNNER_PYTEST = 'pytest==6.2.5'
 CONFIG_FILES = ['setup.cfg', 'pytest.ini', 'tox.ini', 'pyproject.toml', 'conftest.py']

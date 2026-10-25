@@ -17,8 +17,8 @@ outputs behind every number in the paper.
 | `scripts/build_assets.py` | Regenerates the paper's tables and figures from `data/results/full` |
 | `protocol/` | Analysis plan (`protocol.json`), task eligibility and statement rules, selection funnel |
 | `data/inputs/` | Task statements and initial prompts (`tasks/`), reference-fix locations (`reference/`), run manifests and retained-task lists |
-| `data/results/full/` | Per-failure tables (`C.json`: all 75 tasks; `T2`–`T4`: batches 1–3) and analysis outputs |
-| `data/results/analysis-46/` | The interim analysis of the first 46 tasks |
+| `data/results/full/` | Per-failure tables (`C.json`: all 75 tasks; `T2`–`T4`: batches 1–3; `C2.json`: late-started tasks excluded), analysis outputs (`analysis-*.json`), post hoc analyses (`posthoc-r1.json`), design calculation (`design-power.json`) and per-call usage reconciliation |
+| `data/results/analysis-46/` | The interim analysis of the first 46 tasks, with the decision record written before it was run (`decision-before-analysis.json`) |
 
 Some files refer to their original locations under `planning/`; these correspond to `protocol/` and `data/results/`
 here (`planning/m1-main-r1/analysis-final` → `data/results/full`, `analysis-46` → `data/results/analysis-46`,
@@ -34,7 +34,8 @@ python3 m1/analyze_main.py data/results/full/C.json /tmp/analysis-C.json
 python3 scripts/build_assets.py data/results/full protocol/funnel.json /tmp/generated
 ```
 
-`analysis-C.json` is the primary analysis (task-cluster bootstrap with 10,000 resamples, seed 20261015; sign-flip
+`protocol/protocol.json` is the analysis plan with its dated amendments; it was frozen by checksum before the first
+main run, and its `status` field keeps the label it had while drafted. `analysis-C.json` is the primary analysis (task-cluster bootstrap with 10,000 resamples, seed 20261015; sign-flip
 permutation tests; Holm correction). `posthoc-r1.json` holds the post hoc analyses marked as such in the paper.
 
 ## Re-running the experiment
@@ -46,9 +47,6 @@ key. Entry points: `m1/prepare_main.py` builds the inputs, `m1/run_main.py` runs
 frozen scope file and an approval record (`m1/stage.py`); adapt or remove that check for your own runs. Model
 outputs are stochastic (temperature 1, no seed), so a rerun will not reproduce individual attempts.
 
-Raw model requests, responses and workspace snapshots (several GB) are not included; they are available from the
-authors on request.
+Local file-system paths have been replaced (`/home/user`, `/work`). Raw model requests, responses and workspace
+snapshots (several GB) are not included; they are available from the authors on request.
 
-## Contact
-
-Wenbo Ye (ywb6113@gmail.com)

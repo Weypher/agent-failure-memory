@@ -10,7 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from harness.agent import ModelOutputIncomplete  # noqa: E402
 
-LEDGER = Path('/mnt/d/doc/niw/researches/budgted_gate_fail_learning/code/runs/budget.sqlite')
+LEDGER = Path('/work/budgted_gate_fail_learning/code/runs/budget.sqlite')
 MODEL = 'gpt-5.4-mini-2026-03-17'
 
 

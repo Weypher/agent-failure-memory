@@ -14,7 +14,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BUGSINPY = HERE / 'sources' / 'bugsinpy'
-RUNTIME = Path('/home/ywb61/.local/share/agent-failure-memory/runtime')
+RUNTIME = Path('/home/user/.local/share/agent-failure-memory/runtime')
 ROUND = 'trial-r7'  # r6: no bz2/lzma/sqlite, unconstrained extras, removed PyPI pins, pkg_resources  # r5: pytest pins dropped, Windows-only pins, host-marker deps  # r1-r3 kept as record: segfault, wheel-only/self-pin, no ssl, zipped setuptools, buggy tests not replaced
 # Recorded per-project shims, applied identically to buggy and fixed checkouts.
 # Stdlib backports that shadow the standard library on versions that already include it.
@@ -23,7 +23,7 @@ BACKPORTS = {'dataclasses': (3, 7), 'typing': (3, 5), 'enum34': (3, 4), 'futures
 SHIMS = {'black': {'_black_version.py': 'version = "0+bugsinpy"\n'}}
 OPENSSL = '1.1.1w'
 # Interpreters already built from official sources in the previous project (read-only reuse).
-OLD = Path('/home/ywb61/.local/share/budgeted-gate-fail-learning/runtime/bugsinpy-cross-project-v1')
+OLD = Path('/home/user/.local/share/budgeted-gate-fail-learning/runtime/bugsinpy-cross-project-v1')
 TIMEOUT = 600
 
 

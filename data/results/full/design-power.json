@@ -1,0 +1,58 @@
+{
+ "kind": "POST_HOC_DESIGN_CALCULATION",
+ "source": "planning/m1-main-r1/analysis-final/analysis-C.json",
+ "rows": [
+  {
+   "contrast": "HISTORY-NONE",
+   "n_tasks_with_failures": 52,
+   "se": 0.0495,
+   "tasks_needed_power80": {
+    "d=0.05_alpha=0.05": 400,
+    "d=0.05_alpha=0.0125": 568,
+    "d=0.07_alpha=0.05": 204,
+    "d=0.07_alpha=0.0125": 290,
+    "d=0.1_alpha=0.05": 100,
+    "d=0.1_alpha=0.0125": 142
+   }
+  },
+  {
+   "contrast": "REFLECT-NONE",
+   "n_tasks_with_failures": 52,
+   "se": 0.0502,
+   "tasks_needed_power80": {
+    "d=0.05_alpha=0.05": 412,
+    "d=0.05_alpha=0.0125": 585,
+    "d=0.07_alpha=0.05": 210,
+    "d=0.07_alpha=0.0125": 299,
+    "d=0.1_alpha=0.05": 103,
+    "d=0.1_alpha=0.0125": 146
+   }
+  },
+  {
+   "contrast": "SIGNAL-NONE",
+   "n_tasks_with_failures": 52,
+   "se": 0.0356,
+   "tasks_needed_power80": {
+    "d=0.05_alpha=0.05": 207,
+    "d=0.05_alpha=0.0125": 295,
+    "d=0.07_alpha=0.05": 106,
+    "d=0.07_alpha=0.0125": 150,
+    "d=0.1_alpha=0.05": 52,
+    "d=0.1_alpha=0.0125": 74
+   }
+  },
+  {
+   "contrast": "BOTH-NONE",
+   "n_tasks_with_failures": 52,
+   "se": 0.0449,
+   "tasks_needed_power80": {
+    "d=0.05_alpha=0.05": 329,
+    "d=0.05_alpha=0.0125": 468,
+    "d=0.07_alpha=0.05": 168,
+    "d=0.07_alpha=0.0125": 239,
+    "d=0.1_alpha=0.05": 82,
+    "d=0.1_alpha=0.0125": 117
+   }
+  }
+ ]
+}

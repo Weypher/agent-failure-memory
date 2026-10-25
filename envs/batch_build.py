@@ -8,7 +8,7 @@ import json, subprocess, sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-OLD_FRAME = Path('/mnt/d/doc/niw/researches/budgted_gate_fail_learning/code/planning/'
+OLD_FRAME = Path('/work/budgted_gate_fail_learning/code/planning/'
                  'topic-screen-after-atomicity-20261014/environment-attribution-r1/prospective-task-frame-120-r1.json')
 OLD_EXPOSED = {('fastapi', '1'), ('tqdm', '1'), ('matplotlib', '1')}
 sys.path.insert(0, str(HERE))
