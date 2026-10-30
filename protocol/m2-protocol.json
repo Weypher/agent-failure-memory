@@ -1,0 +1,69 @@
+{
+ "kind": "M2_PROTOCOL",
+ "title": "Exploratory replication of the failure-memory study with a stronger model of the same family",
+ "authorization": "User 2026-10-28 PDT: cumulative cap USD220 (ledger amendment b92baaa1e11c45427990d67c8464535858f61666a1b926c9be858f1dd896508f); stage afm-m2-gpt54 capped at USD120; gpt-5.4; NONE/HISTORY/REFLECT.",
+ "scope_note": "AGENTS.md fixes the model of the M1 study as gpt-5.4-mini-2026-03-17. M2 is a separate, user-authorized replication stage and is never pooled with M1.",
+ "model": {
+  "id": "gpt-5.4-2026-03-05",
+  "price_usd_per_million": {
+   "input": 2.5,
+   "cached_input": 0.25,
+   "output": 15
+  },
+  "price_source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+  "price_checked": "2026-10-28",
+  "settings": "identical to M1: temperature 1, reasoning effort low, max 3000 output tokens per response, 96000-byte input bound, 8 responses per attempt"
+ },
+ "tasks": "The same 75 tasks, inputs, statements, sandboxes and selected tests as M1 (manifest copied unchanged; m2-inputs-r1). Six first attempts per task.",
+ "conditions": [
+  "NONE",
+  "HISTORY",
+  "REFLECT"
+ ],
+ "condition_definitions": "Exactly as in M1 (m1/memory.py, m1/prompts.py unchanged). Order rotated by (task index + repetition) over the three arms.",
+ "harness_rules": "As M1 route r4: intention to treat; agent-caused endings (limits, broken builds, timeouts) count as unresolved; harness/provider errors make the attempt missing; circuit breaker stops the stage after 3 transient provider errors; any other harness error stops the stage. No automatic rerun of a stopped route.",
+ "parts": {
+  "smoke": "Route afm-m2-gpt54/smoke (cap USD4): tasks thefuck/16 and black/22, one repetition each, run first. Purpose: verify that the provider accepts the model and settings and that outputs parse. The code refuses to start the main part unless smoke wrote complete.json, no stopped.json and no harness events. Smoke data are debug records: never analysed, never used to change hypotheses or analysis. If smoke does not complete cleanly, M2 stops; any code change requires a new freeze and new reviews.",
+  "main": "Route afm-m2-gpt54/main (cap USD120 under the stage cap): all 75 tasks x 6 repetitions, 6 workers."
+ },
+ "hypotheses_predeclared": {
+  "basis": "Post hoc findings on M1 (gpt-5.4-mini), recorded in planning/m1-main-r1/analysis-final/posthoc-revision-r1.json (code m1/posthoc_revision.py); both files are hashed in this frozen scope before any M2 call.",
+  "H1": "Memory raises the share of retries that edit any source (.py) file: HISTORY - NONE > 0 and REFLECT - NONE > 0 (M1 post hoc: +17.1 and +13.3 points). Interpretation (binding): H1 concerns whether the retry makes an edit at all, i.e. whether it gives up less; it is NOT a measure of fault localisation, because in M1 94-98% of editing retries edited a fix file in every condition.",
+  "H1_secondary": "Same contrasts for editing a source file changed by the reference fix, and, descriptively, the share of editing retries that edit a fix file per condition (M1: 94-98%; expected to be similar across conditions).",
+  "H2": "Among retries that edit a fix file, pass rates per condition and the HISTORY - NONE difference (unpaired subsets, task-cluster bootstrap) are reported as estimates only; no claim of equivalence is made. Descriptive because it conditions on a post-treatment variable.",
+  "H3": "REFLECT - HISTORY in retry resolution is reported as an estimate with its 95% CI; no non-inferiority or equivalence claim (no margin).",
+  "H4": "Retry resolution HISTORY - NONE and REFLECT - NONE, reported with CIs and Holm-adjusted p; M1 point estimates were +9.4 and +7.2."
+ },
+ "analysis": {
+  "unit": "Natural failure (task, repetition) of a first attempt; clusters = tasks.",
+  "primary_family": "H1 contrasts (edited any source file): HISTORY-NONE and REFLECT-NONE; mean paired difference, 95% task-cluster bootstrap CI (10000 resamples, seed 20261029), two-sided task-level sign-flip permutation p, Holm over the two.",
+  "secondary": "H1_secondary (edited fix file; fix file among editing retries), H4 resolution contrasts (Holm over two), H3 REFLECT-HISTORY (estimate and CI), H2 (estimates only).",
+  "edit_fix_file": "A retry edits a fix file if any modified .py file equals, or is a path suffix of, a source (non-test) file changed by the reference fix (m1/accuracy.reference_locations). Missing (harness) retries are excluded pairwise.",
+  "descriptive": "First-attempt pass rate and endings; number of failures and tasks with failures; lesson status; retry endings by type; mean cost (ledger charges per call sequence; REFLECT includes its lesson call) and wall-clock (REFLECT includes the lesson) per condition; M1 values side by side (no pooling, no test of difference).",
+  "small_sample_rule": "If fewer than 30 failures or fewer than 12 tasks with failures occur, all contrasts are reported descriptively without p-values.",
+  "code": "m2/analyze_m2.py, frozen with this protocol.",
+  "missing_and_flags": "REFLECT is missing when its lesson is censored (context or output limit) or lost to a harness error, so REFLECT-NONE and HISTORY-NONE may use different subsets (pairwise availability). Sensitivity: H1 and H4 on the subset where all three arms have a non-missing outcome. Integrity-flagged retries count as unresolved for H4; their edits count as edits for H1 (none occurred in M1)."
+ },
+ "deadline_rule": "If the main part has not started by 2026-10-29 06:00 PDT (whatever the reason: key, review, smoke), M2 is abandoned for this submission; the abandonment and its reason are recorded in the replication package. Abandonment can only happen before any main-part outcome exists.",
+ "revision": "r2: addresses M2 review r1 (validity FAIL: findings 1-7; implementation FAIL: scope coverage, smoke guard, analyzer completeness, check order).",
+ "decision_rules": {
+  "test": "Two-sided task-level sign-flip permutation p; Holm within each family of two contrasts; alpha 0.05.",
+  "H1_supported": "Both H1 contrasts have positive estimates and Holm-adjusted p < 0.05. Otherwise H1 is 'not supported in M2', which is inconclusive and not a refutation (fewer failures and a possible ceiling on editing with a stronger model reduce precision).",
+  "precision_note": "With about 180 failures in M1 the H1 contrasts had CIs of roughly +/-9 points; a stronger model is expected to produce fewer failures, so CIs will be wider (roughly proportional to 1/sqrt(failures)).",
+  "small_sample_rule": "If fewer than 30 failures or fewer than 12 tasks with failures occur, all contrasts are reported descriptively without p-values and H1 is not assessed."
+ },
+ "stop_and_partial": "If the main part stops (circuit breaker, budget, or any non-transient error), there is no resume for this submission. The analysis is run on the tasks whose rows have status 'complete' and is labelled PARTIAL, with the number of tasks and the stop reason. Once the main part has started, M2 is reported in the paper whatever its direction, including a stop or a partial result.",
+ "threats": "Same 75 tasks as M1: M2 tests whether the M1 post hoc pattern transfers to a stronger model on the tasks that generated it, not to new tasks. A stronger model's failures are a different, likely harder subset of instances, so M1 and M2 estimates refer to different failure populations. BugsInPy fixes are public and may be in either model's training data. One model family only.",
+ "status": "FROZEN_FOR_INDEPENDENT_REVIEW",
+ "frozen": true,
+ "frame_counts": {
+  "tasks": 75,
+  "first_attempt_repetitions": 6,
+  "workers": 6,
+  "arms": [
+   "NONE",
+   "HISTORY",
+   "REFLECT"
+  ]
+ }
+}

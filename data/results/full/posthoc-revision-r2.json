@@ -1,0 +1,42 @@
+{
+ "kind": "POST_HOC_REVISION_R2",
+ "note": "resolved | edited fix file, condition minus NONE",
+ "contrasts": {
+  "HISTORY": {
+   "contrast": "HISTORY-NONE resolved | edited fix file",
+   "difference": 0.02142933676202724,
+   "n_tasks": 52,
+   "ci95": [
+    -0.09476360637713022,
+    0.13548951048951052
+   ]
+  },
+  "REFLECT": {
+   "contrast": "REFLECT-NONE resolved | edited fix file",
+   "difference": 0.029208035095820817,
+   "n_tasks": 51,
+   "ci95": [
+    -0.07824823578248236,
+    0.14549375595566477
+   ]
+  },
+  "SIGNAL": {
+   "contrast": "SIGNAL-NONE resolved | edited fix file",
+   "difference": 0.021145165122356868,
+   "n_tasks": 51,
+   "ci95": [
+    -0.0671540548688574,
+    0.11085972850678733
+   ]
+  },
+  "BOTH": {
+   "contrast": "BOTH-NONE resolved | edited fix file",
+   "difference": 0.08722779544898457,
+   "n_tasks": 52,
+   "ci95": [
+    -0.024469489288252655,
+    0.1985915492957746
+   ]
+  }
+ }
+}

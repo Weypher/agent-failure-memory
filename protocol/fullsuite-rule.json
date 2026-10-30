@@ -1,0 +1,72 @@
+{
+ "kind": "POST_HOC_ANALYSIS_RULE",
+ "name": "fullsuite-regression-r1",
+ "written": "2026-10-28, before any patched workspace was run under this rule",
+ "motivation": "internal pre-submission review: success counted only on bug-revealing tests; test-specific patches may differ by condition.",
+ "status": "post hoc; offline; no model calls",
+ "scope": "Every retry (all five conditions) recorded as resolved in planning/m1-main-r1/analysis-final/C.json; resolved first attempts of tasks with failures as context only.",
+ "suite": {
+  "roots": {
+   "ansible": [
+    "test/units"
+   ],
+   "black": [
+    "tests"
+   ],
+   "fastapi": [
+    "tests"
+   ],
+   "httpie": [
+    "tests"
+   ],
+   "luigi": [
+    "test"
+   ],
+   "sanic": [
+    "tests"
+   ],
+   "scrapy": [
+    "tests"
+   ],
+   "thefuck": [
+    "tests"
+   ],
+   "tornado": [
+    "tornado/test"
+   ],
+   "tqdm": [
+    "tqdm/tests"
+   ],
+   "youtube-dl": [
+    "test"
+   ],
+   "keras": [
+    "tests"
+   ]
+  },
+  "fallback": "If either reference run of a task's full roots times out or does not return, use instead the test modules in the directories containing that task's selected tests (protected paths), applied to reference and patched runs alike.",
+  "timeout_seconds": 1200,
+  "sandbox": "Same per-task sandbox spec as the main run (no network, same interpreter and packages).",
+  "test_files": "Files under the suite roots are taken from the reference (fixed) checkout in both reference and patched runs, so agent edits to unprotected test files cannot hide a regression; such edits are counted and reported."
+ },
+ "reference": "The task's fixed checkout, run twice. Stable-pass set S = test node ids whose setup, call and teardown phases all passed in both runs.",
+ "regression": "A patched workspace regresses if any test in S is not passed in all its phases (failed, error, skipped or not collected), or if the run times out or pytest does not return.",
+ "outcome": "suite_clean = resolved on the selected tests AND no regression. Reported per condition; the primary contrasts are recomputed with suite_clean as outcome using the frozen analysis code paths (paired differences, task-cluster bootstrap, sign-flip permutation, Holm).",
+ "no_tuning": "Rule is not changed after seeing patched results; any deviation is recorded as an amendment with reason.",
+ "amendments": [
+  {
+   "id": "impl-1",
+   "when": "2026-10-28, after the first reference (fixed-checkout) runs and before any patched workspace was run",
+   "what": "Test modules under the roots are passed to pytest as an explicit file list (names test*.py, *_test.py, *_tests.py) and --continue-on-collection-errors is set.",
+   "why": "Directory arguments collected nothing for tqdm/httpie (non-default file names) and one optional-dependency import error (e.g. PIL, urllib3) aborted collection of whole suites. Modules that fail to import on the fixed checkout contribute no stable-pass tests.",
+   "effect": "Reference runs repeated from scratch; rule content unchanged."
+  },
+  {
+   "id": "impl-2",
+   "when": "2026-10-29 PDT, after all reference runs and before any patched workspace was run",
+   "what": "(a) A run counts as returned when pytest itself returned (lifecycle state \"returned\"), even if the process was killed at the timeout afterwards (luigi/3 and luigi/9: pytest finished in about 8 minutes, then the interpreter hung on exit in both reference runs). (b) A task whose reference runs did not return in either mode has no stable-pass set; its resolved attempts are reported as \"not checked\" (luigi/23: S3 tests stall without network).",
+   "why": "Applying the rule literally would count every patched luigi run as a regression because of a shutdown hang that also occurs on the fixed checkout.",
+   "implementation": "m1/fullsuite_summary.py (m1/fullsuite.py is unchanged; it is hashed in the frozen M2 scope)."
+  }
+ ]
+}

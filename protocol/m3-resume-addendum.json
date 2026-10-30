@@ -1,0 +1,8 @@
+{
+ "kind": "M3_RESUME_ADDENDUM",
+ "written": "2026-10-29 PDT, after the gpt54 part stopped and before any gpt54 M3 outcome was examined (only row completion statuses were read)",
+ "reason": "The gpt54 part stopped at fastapi/6 R3-REFLECT on HTTP 520 (upstream gateway error); 520 was not in the runner's transient set, so the stage stopped. 16 tasks (44 failures) had completed.",
+ "authority": "User standing instruction 2026-10-29: runs that hit problems may be repeated 1-2 times; spend stays within the user-authorized M3 stage cap of USD60.",
+ "resume": "Part gpt54b reruns all failures of the tasks that had not completed (rows stopped or errored are discarded, as in M1), with the same model, settings, prompts, arm rotation (same task index) and analysis. HTTP 520-524 are treated as transient (circuit breaker of 3 unchanged).",
+ "analysis": "The gpt-5.4 M3 analysis uses the completed gpt54 rows plus the gpt54b rows (tasks partition the frozen gpt54 failure list), with m3/analyze_m3.py and the frozen gpt54 list; reported as resumed after an interruption, with the interruption disclosed. If gpt54b also stops, its completed rows are added and the result is labelled PARTIAL."
+}

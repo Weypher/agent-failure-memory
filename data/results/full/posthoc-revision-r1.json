@@ -1,0 +1,568 @@
+{
+ "kind": "POST_HOC_REVISION_R1",
+ "seed": 20261028,
+ "written": "2026-10-28",
+ "reason": "internal pre-submission review; all analyses post hoc",
+ "A2": {
+  "retry_edit_hit": {
+   "NONE": {
+    "rate": 0.6740331491712708,
+    "n": 181
+   },
+   "HISTORY": {
+    "rate": 0.8453038674033149,
+    "n": 181
+   },
+   "REFLECT": {
+    "rate": 0.7888888888888889,
+    "n": 180
+   },
+   "SIGNAL": {
+    "rate": 0.7624309392265194,
+    "n": 181
+   },
+   "BOTH": {
+    "rate": 0.7403314917127072,
+    "n": 181
+   }
+  },
+  "retry_edited_any": {
+   "NONE": 0.6906077348066298,
+   "HISTORY": 0.861878453038674,
+   "REFLECT": 0.8222222222222222,
+   "SIGNAL": 0.7900552486187845,
+   "BOTH": 0.7845303867403315
+  },
+  "contrast_edit_hit_vs_none": {
+   "HISTORY": {
+    "n_instances": 181,
+    "n_tasks": 52,
+    "difference": 0.1712707182320442,
+    "ci95": [
+     0.08125,
+     0.2631578947368421
+    ],
+    "p_permutation": 0.0008999100089991
+   },
+   "REFLECT": {
+    "n_instances": 180,
+    "n_tasks": 52,
+    "difference": 0.11666666666666667,
+    "ci95": [
+     0.04519774011299435,
+     0.18781725888324874
+    ],
+    "p_permutation": 0.004199580041995801
+   },
+   "SIGNAL": {
+    "n_instances": 181,
+    "n_tasks": 52,
+    "difference": 0.08839779005524862,
+    "ci95": [
+     0.015957446808510637,
+     0.16470588235294117
+    ],
+    "p_permutation": 0.032296770322967704
+   },
+   "BOTH": {
+    "n_instances": 181,
+    "n_tasks": 52,
+    "difference": 0.06629834254143646,
+    "ci95": [
+     -0.005917159763313609,
+     0.13966480446927373
+    ],
+    "p_permutation": 0.11988801119888011
+   }
+  },
+  "resolved_given_edit_hit": {
+   "NONE": {
+    "hit": {
+     "rate": 0.4426229508196721,
+     "n": 122
+    },
+    "miss": {
+     "rate": 0.0,
+     "n": 59
+    }
+   },
+   "HISTORY": {
+    "hit": {
+     "rate": 0.46405228758169936,
+     "n": 153
+    },
+    "miss": {
+     "rate": 0.0,
+     "n": 28
+    }
+   },
+   "REFLECT": {
+    "hit": {
+     "rate": 0.47183098591549294,
+     "n": 142
+    },
+    "miss": {
+     "rate": 0.0,
+     "n": 38
+    }
+   },
+   "SIGNAL": {
+    "hit": {
+     "rate": 0.463768115942029,
+     "n": 138
+    },
+    "miss": {
+     "rate": 0.0,
+     "n": 43
+    }
+   },
+   "BOTH": {
+    "hit": {
+     "rate": 0.5298507462686567,
+     "n": 134
+    },
+    "miss": {
+     "rate": 0.02127659574468085,
+     "n": 47
+    }
+   }
+  },
+  "retry_edit_hit_a1_edited": {
+   "NONE": {
+    "rate": 0.78,
+    "n": 100
+   },
+   "HISTORY": {
+    "rate": 0.93,
+    "n": 100
+   },
+   "REFLECT": {
+    "rate": 0.84,
+    "n": 100
+   },
+   "SIGNAL": {
+    "rate": 0.87,
+    "n": 100
+   },
+   "BOTH": {
+    "rate": 0.77,
+    "n": 100
+   }
+  },
+  "resolved_a1_edited": {
+   "NONE": {
+    "rate": 0.29,
+    "n": 100
+   },
+   "HISTORY": {
+    "rate": 0.42,
+    "n": 100
+   },
+   "REFLECT": {
+    "rate": 0.35,
+    "n": 100
+   },
+   "SIGNAL": {
+    "rate": 0.36,
+    "n": 100
+   },
+   "BOTH": {
+    "rate": 0.38,
+    "n": 100
+   }
+  },
+  "contrast_resolved_a1_edited": {
+   "HISTORY": {
+    "n_instances": 100,
+    "n_tasks": 40,
+    "difference": 0.13,
+    "ci95": [
+     0.009708737864077669,
+     0.25
+    ],
+    "p_permutation": 0.051594840515948405
+   },
+   "REFLECT": {
+    "n_instances": 100,
+    "n_tasks": 40,
+    "difference": 0.06,
+    "ci95": [
+     -0.05454545454545454,
+     0.19
+    ],
+    "p_permutation": 0.43475652434756523
+   },
+   "SIGNAL": {
+    "n_instances": 100,
+    "n_tasks": 40,
+    "difference": 0.07,
+    "ci95": [
+     -0.02857142857142857,
+     0.17475728155339806
+    ],
+    "p_permutation": 0.25707429257074293
+   },
+   "BOTH": {
+    "n_instances": 100,
+    "n_tasks": 40,
+    "difference": 0.09,
+    "ci95": [
+     -0.009615384615384616,
+     0.20212765957446807
+    ],
+    "p_permutation": 0.1401859814018598
+   }
+  },
+  "retry_edit_hit_a1_no_edit": {
+   "NONE": {
+    "rate": 0.5432098765432098,
+    "n": 81
+   },
+   "HISTORY": {
+    "rate": 0.7407407407407407,
+    "n": 81
+   },
+   "REFLECT": {
+    "rate": 0.725,
+    "n": 80
+   },
+   "SIGNAL": {
+    "rate": 0.6296296296296297,
+    "n": 81
+   },
+   "BOTH": {
+    "rate": 0.7037037037037037,
+    "n": 81
+   }
+  },
+  "resolved_a1_no_edit": {
+   "NONE": {
+    "rate": 0.30864197530864196,
+    "n": 81
+   },
+   "HISTORY": {
+    "rate": 0.35802469135802467,
+    "n": 81
+   },
+   "REFLECT": {
+    "rate": 0.4,
+    "n": 80
+   },
+   "SIGNAL": {
+    "rate": 0.345679012345679,
+    "n": 81
+   },
+   "BOTH": {
+    "rate": 0.41975308641975306,
+    "n": 81
+   }
+  },
+  "contrast_resolved_a1_no_edit": {
+   "HISTORY": {
+    "n_instances": 81,
+    "n_tasks": 39,
+    "difference": 0.04938271604938271,
+    "ci95": [
+     -0.09333333333333334,
+     0.18518518518518517
+    ],
+    "p_permutation": 0.6121387861213878
+   },
+   "REFLECT": {
+    "n_instances": 80,
+    "n_tasks": 39,
+    "difference": 0.0875,
+    "ci95": [
+     -0.06349206349206349,
+     0.2328767123287671
+    ],
+    "p_permutation": 0.3498650134986501
+   },
+   "SIGNAL": {
+    "n_instances": 81,
+    "n_tasks": 39,
+    "difference": 0.037037037037037035,
+    "ci95": [
+     -0.06896551724137931,
+     0.14634146341463414
+    ],
+    "p_permutation": 0.6522347765223477
+   },
+   "BOTH": {
+    "n_instances": 81,
+    "n_tasks": 39,
+    "difference": 0.1111111111111111,
+    "ci95": [
+     -0.02564102564102564,
+     0.25
+    ],
+    "p_permutation": 0.17618238176182383
+   }
+  },
+  "lesson_hit_vs_success": {
+   "REFLECT": {
+    "top1_file_hit": {
+     "hit": {
+      "rate": 0.37579617834394907,
+      "n": 157
+     },
+     "miss": {
+      "rate": 0.34782608695652173,
+      "n": 23
+     }
+    },
+    "file_hit": {
+     "hit": {
+      "rate": 0.38922155688622756,
+      "n": 167
+     },
+     "miss": {
+      "rate": 0.15384615384615385,
+      "n": 13
+     }
+    },
+    "top1_function_hit": {
+     "hit": {
+      "rate": 0.41935483870967744,
+      "n": 93
+     },
+     "miss": {
+      "rate": 0.3218390804597701,
+      "n": 87
+     }
+    }
+   },
+   "BOTH": {
+    "top1_file_hit": {
+     "hit": {
+      "rate": 0.41139240506329117,
+      "n": 158
+     },
+     "miss": {
+      "rate": 0.30434782608695654,
+      "n": 23
+     }
+    },
+    "file_hit": {
+     "hit": {
+      "rate": 0.4226190476190476,
+      "n": 168
+     },
+     "miss": {
+      "rate": 0.07692307692307693,
+      "n": 13
+     }
+    },
+    "top1_function_hit": {
+     "hit": {
+      "rate": 0.4148936170212766,
+      "n": 94
+     },
+     "miss": {
+      "rate": 0.3793103448275862,
+      "n": 87
+     }
+    }
+   }
+  },
+  "reflect_minus_history_by_top1": {
+   "True": {
+    "n_instances": 157,
+    "n_tasks": 50,
+    "difference": -0.01910828025477707,
+    "ci95": [
+     -0.08235294117647059,
+     0.043209876543209874
+    ],
+    "p_permutation": 0.6897310268973103
+   },
+   "False": {
+    "n_instances": 23,
+    "n_tasks": 11,
+    "difference": 0.0,
+    "ci95": [
+     -0.3333333333333333,
+     0.19230769230769232
+    ],
+    "p_permutation": 1.0
+   }
+  },
+  "contrast_edited_any_vs_none": {
+   "HISTORY": {
+    "n_instances": 181,
+    "n_tasks": 52,
+    "difference": 0.1712707182320442,
+    "ci95": [
+     0.07894736842105263,
+     0.2611111111111111
+    ],
+    "p_permutation": 0.000999900009999
+   },
+   "REFLECT": {
+    "n_instances": 180,
+    "n_tasks": 52,
+    "difference": 0.13333333333333333,
+    "ci95": [
+     0.06282722513089005,
+     0.2057142857142857
+    ],
+    "p_permutation": 0.0015998400159984002
+   },
+   "SIGNAL": {
+    "n_instances": 181,
+    "n_tasks": 52,
+    "difference": 0.09944751381215469,
+    "ci95": [
+     0.02030456852791878,
+     0.1797752808988764
+    ],
+    "p_permutation": 0.027897210278972105
+   },
+   "BOTH": {
+    "n_instances": 181,
+    "n_tasks": 52,
+    "difference": 0.09392265193370165,
+    "ci95": [
+     0.011764705882352941,
+     0.17721518987341772
+    ],
+    "p_permutation": 0.045995400459954004
+   }
+  },
+  "fix_file_given_edited": {
+   "NONE": {
+    "rate": 0.976,
+    "n": 125
+   },
+   "HISTORY": {
+    "rate": 0.9807692307692307,
+    "n": 156
+   },
+   "REFLECT": {
+    "rate": 0.9594594594594594,
+    "n": 148
+   },
+   "SIGNAL": {
+    "rate": 0.965034965034965,
+    "n": 143
+   },
+   "BOTH": {
+    "rate": 0.9436619718309859,
+    "n": 142
+   }
+  }
+ },
+ "A3": {
+  "n_conditions_resolving_failure": {
+   "0": 63,
+   "1": 29,
+   "2": 22,
+   "3": 28,
+   "4": 21,
+   "5": 17
+  },
+  "icc_failure": 0.3974703041468094,
+  "icc_task": 0.36867461814182556,
+  "share_variance_condition": 0.005560443721188284,
+  "project_cluster_bootstrap": {
+   "HISTORY-NONE": {
+    "n_instances": 181,
+    "n_tasks": 11,
+    "difference": 0.09392265193370165,
+    "ci95": [
+     -0.029239766081871343,
+     0.24822695035460993
+    ],
+    "p_permutation": 0.20877912208779123
+   },
+   "REFLECT-NONE": {
+    "n_instances": 180,
+    "n_tasks": 11,
+    "difference": 0.07222222222222222,
+    "ci95": [
+     -0.006172839506172839,
+     0.20689655172413793
+    ],
+    "p_permutation": 0.18968103189681032
+   },
+   "SIGNAL-NONE": {
+    "n_instances": 181,
+    "n_tasks": 11,
+    "difference": 0.055248618784530384,
+    "ci95": [
+     -0.018691588785046728,
+     0.16153846153846155
+    ],
+    "p_permutation": 0.23127687231276872
+   },
+   "BOTH-NONE": {
+    "n_instances": 181,
+    "n_tasks": 11,
+    "difference": 0.09944751381215469,
+    "ci95": [
+     0.022556390977443608,
+     0.21551724137931033
+    ],
+    "p_permutation": 0.07949205079492051
+   },
+   "REFLECT-HISTORY": {
+    "n_instances": 180,
+    "n_tasks": 11,
+    "difference": -0.016666666666666666,
+    "ci95": [
+     -0.0782122905027933,
+     0.06167400881057269
+    ],
+    "p_permutation": 0.7663233676632337
+   },
+   "REFLECT-SIGNAL": {
+    "n_instances": 180,
+    "n_tasks": 11,
+    "difference": 0.016666666666666666,
+    "ci95": [
+     -0.0410958904109589,
+     0.08029197080291971
+    ],
+    "p_permutation": 0.7011298870112989
+   },
+   "BOTH-REFLECT": {
+    "n_instances": 180,
+    "n_tasks": 11,
+    "difference": 0.022222222222222223,
+    "ci95": [
+     -0.034482758620689655,
+     0.07017543859649122
+    ],
+    "p_permutation": 0.5673432656734326
+   }
+  }
+ },
+ "A4": {
+  "note": "Lower/upper 95% bounds of the predeclared contrasts, for statements of excluded effects.",
+  "source": "planning/m1-main-r1/analysis-final/analysis-C.json",
+  "keys": [
+   "availability",
+   "bootstrap",
+   "bounds_impute_resolved",
+   "bounds_impute_unresolved",
+   "cost_usd",
+   "descriptive_lessons",
+   "first_attempts",
+   "first_attempts_missing_harness",
+   "framing",
+   "kind",
+   "lesson_censored",
+   "lesson_status_by_a1_subtype",
+   "lesson_status_counts",
+   "missing_retry_arms",
+   "per_project",
+   "primary_itt",
+   "resolution_rates",
+   "retry_subtypes_by_arm",
+   "secondary_itt",
+   "seconds",
+   "seed",
+   "sensitivity_complete_case"
+  ]
+ }
+}

@@ -1,0 +1,278 @@
+{
+ "kind": "M3_PREDECLARED_ANALYSIS",
+ "seed": 20261030,
+ "protocol": [
+  "planning/m3-notice/review-r2/gpt54/protocol.json",
+  "planning/m3-notice/review-r4/gpt54c/protocol.json (resume addenda supersede \"no resume\"; second resume after gpt54b stopped)"
+ ],
+ "row_status": {
+  "complete": 32
+ },
+ "partial": false,
+ "failures_expected": 85,
+ "failures_analysed": 85,
+ "failures_not_analysed": [],
+ "missing_retries": {},
+ "primary_edited": [
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.07792207792207792,
+    0.1951219512195122
+   ],
+   "p_permutation": 0.5287471252874713,
+   "contrast": "NOTICE-NONE edited",
+   "p_holm": 1.0
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.15294117647058825,
+   "ci95": [
+    0.029850746268656716,
+    0.2840909090909091
+   ],
+   "p_permutation": 0.12068793120687932,
+   "contrast": "HISTORY-NOTICE edited",
+   "p_holm": 0.36206379362063795
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.046153846153846156,
+    0.19047619047619047
+   ],
+   "p_permutation": 0.6608339166083391,
+   "contrast": "REFLECT-NOTICE edited",
+   "p_holm": 1.0
+  }
+ ],
+ "secondary_resolved": [
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": -0.07058823529411765,
+   "ci95": [
+    -0.19696969696969696,
+    0.05194805194805195
+   ],
+   "p_permutation": 0.38536146385361464,
+   "contrast": "NOTICE-NONE resolved",
+   "p_holm": 0.7707229277072293
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.16470588235294117,
+   "ci95": [
+    0.0,
+    0.32978723404255317
+   ],
+   "p_permutation": 0.11988801119888011,
+   "contrast": "HISTORY-NOTICE resolved",
+   "p_holm": 0.35966403359664034
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.047058823529411764,
+    0.15584415584415584
+   ],
+   "p_permutation": 0.3982601739826017,
+   "contrast": "REFLECT-NOTICE resolved",
+   "p_holm": 0.7707229277072293
+  }
+ ],
+ "decisions": {
+  "NOTICE-NONE edited": "not supported",
+  "HISTORY-NOTICE edited": "not distinguished",
+  "REFLECT-NOTICE edited": "not distinguished",
+  "NOTICE-NONE resolved": "not supported",
+  "HISTORY-NOTICE resolved": "not distinguished",
+  "REFLECT-NOTICE resolved": "not distinguished"
+ },
+ "descriptive_vs_none": [
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.0784313725490196,
+    0.19791666666666666
+   ],
+   "p_permutation": 0.5297470252974702,
+   "contrast": "descriptive NOTICE-NONE edited"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": -0.07058823529411765,
+   "ci95": [
+    -0.1951219512195122,
+    0.05128205128205128
+   ],
+   "p_permutation": 0.37206279372062795,
+   "contrast": "descriptive NOTICE-NONE resolved"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "p_permutation": 1.0,
+   "contrast": "descriptive NOTICE-NONE done_no_edit"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.21176470588235294,
+   "ci95": [
+    0.09375,
+    0.32673267326732675
+   ],
+   "p_permutation": 0.007799220077992201,
+   "contrast": "descriptive HISTORY-NONE edited"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.09411764705882353,
+   "ci95": [
+    -0.0958904109589041,
+    0.27586206896551724
+   ],
+   "p_permutation": 0.42375762423757624,
+   "contrast": "descriptive HISTORY-NONE resolved"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "p_permutation": 1.0,
+   "contrast": "descriptive HISTORY-NONE done_no_edit"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.11764705882352941,
+   "ci95": [
+    -0.024096385542168676,
+    0.25316455696202533
+   ],
+   "p_permutation": 0.1777822217778222,
+   "contrast": "descriptive REFLECT-NONE edited"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": -0.011764705882352941,
+   "ci95": [
+    -0.15384615384615385,
+    0.12987012987012986
+   ],
+   "p_permutation": 1.0,
+   "contrast": "descriptive REFLECT-NONE resolved"
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "p_permutation": 1.0,
+   "contrast": "descriptive REFLECT-NONE done_no_edit"
+  }
+ ],
+ "rates": {
+  "NONE": {
+   "edited": 0.7764705882352941,
+   "resolved": 0.4823529411764706,
+   "done_no_edit": 0.0
+  },
+  "NOTICE": {
+   "edited": 0.8352941176470589,
+   "resolved": 0.4117647058823529,
+   "done_no_edit": 0.0
+  },
+  "HISTORY": {
+   "edited": 0.9882352941176471,
+   "resolved": 0.5764705882352941,
+   "done_no_edit": 0.0
+  },
+  "REFLECT": {
+   "edited": 0.8941176470588236,
+   "resolved": 0.47058823529411764,
+   "done_no_edit": 0.0
+  }
+ },
+ "retry_endings": {
+  "NONE": {
+   "response_limit": 52,
+   "declared_done": 25,
+   "response_limit/non_test_exit": 1,
+   "context_limit": 7
+  },
+  "NOTICE": {
+   "declared_done": 19,
+   "response_limit": 53,
+   "output_limit": 1,
+   "context_limit": 8,
+   "response_limit/non_test_exit": 1,
+   "invalid_test_execution/non_test_exit": 3
+  },
+  "HISTORY": {
+   "declared_done": 40,
+   "response_limit": 25,
+   "response_limit/non_test_exit": 3,
+   "context_limit": 12,
+   "invalid_test_execution/non_test_exit": 3,
+   "tool_timeout": 1,
+   "tool_timeout/timeout": 1
+  },
+  "REFLECT": {
+   "declared_done": 32,
+   "response_limit": 39,
+   "response_limit/non_test_exit": 4,
+   "context_limit": 6,
+   "output_limit": 1,
+   "tool_timeout": 1,
+   "invalid_test_execution/non_test_exit": 1,
+   "tool_timeout/timeout": 1
+  }
+ },
+ "ledger_calls_and_usd": {
+  "gpt54 (incl. discarded partial work)": [
+   1391,
+   17.455167
+  ],
+  "gpt54c": [
+   1171,
+   15.7803935
+  ]
+ },
+ "sessions": {
+  "gpt54": {
+   "tasks": 16,
+   "note": "stopped on HTTP 520; completed tasks kept"
+  },
+  "gpt54c": {
+   "tasks": 16,
+   "note": "resume of uncompleted tasks"
+  }
+ }
+}

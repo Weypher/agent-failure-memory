@@ -1,0 +1,454 @@
+{
+ "kind": "M2_PREDECLARED_ANALYSIS",
+ "seed": 20261029,
+ "protocol": "planning/m2-gpt54/review-r2/protocol.json",
+ "partial": false,
+ "row_status": {
+  "complete": 75
+ },
+ "first_attempts": {
+  "n": 450,
+  "outcomes": {
+   "resolved": 365,
+   "unresolved": 85
+  },
+  "endings": {
+   "declared_done": 328,
+   "response_limit": 94,
+   "tool_timeout": 1,
+   "response_limit/non_test_exit": 4,
+   "context_limit": 18,
+   "output_limit": 2,
+   "invalid_test_execution/missing_events": 1,
+   "invalid_test_execution/non_test_exit": 1,
+   "tool_timeout/timeout": 1
+  }
+ },
+ "failures": 85,
+ "tasks_with_failures": 32,
+ "small_sample_rule_applies": false,
+ "lesson_status": {
+  "valid": 85
+ },
+ "H1_edited_any_source": [
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.1411764705882353,
+   "ci95": [
+    0.05128205128205128,
+    0.24096385542168675
+   ],
+   "p_permutation": 0.0163983601639836,
+   "contrast": "HISTORY-NONE edited_any_source",
+   "p_holm": 0.0327967203279672
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.024390243902439025,
+    0.1643835616438356
+   ],
+   "p_permutation": 0.37416258374162586,
+   "contrast": "REFLECT-NONE edited_any_source",
+   "p_holm": 0.37416258374162586
+  }
+ ],
+ "H1_supported": false,
+ "H1_secondary_edited_fix_file": [
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.12941176470588237,
+   "ci95": [
+    0.04597701149425287,
+    0.22857142857142856
+   ],
+   "p_permutation": 0.0170982901709829,
+   "contrast": "HISTORY-NONE edited_fix_file",
+   "p_holm": 0.0341965803419658
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.058823529411764705,
+   "ci95": [
+    -0.024691358024691357,
+    0.16091954022988506
+   ],
+   "p_permutation": 0.37376262373762625,
+   "contrast": "REFLECT-NONE edited_fix_file",
+   "p_holm": 0.37376262373762625
+  }
+ ],
+ "H2_resolved_given_fix_file_HISTORY_minus_NONE": {
+  "contrast": "HISTORY-NONE resolved | edited fix file",
+  "difference": 0.03679653679653683,
+  "n_tasks": 32,
+  "ci95": [
+   -0.19691224268689056,
+   0.26454033771106944
+  ]
+ },
+ "H3_reflect_minus_history": {
+  "n_instances": 85,
+  "n_tasks": 32,
+  "difference": -0.03529411764705882,
+  "ci95": [
+   -0.14130434782608695,
+   0.0821917808219178
+  ],
+  "p_permutation": 0.7005299470052995,
+  "contrast": "REFLECT-HISTORY resolved"
+ },
+ "H4_resolved": [
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.10588235294117647,
+   "ci95": [
+    -0.08928571428571429,
+    0.2926829268292683
+   ],
+   "p_permutation": 0.39206079392060794,
+   "contrast": "HISTORY-NONE resolved",
+   "p_holm": 0.7841215878412159
+  },
+  {
+   "n_instances": 85,
+   "n_tasks": 32,
+   "difference": 0.07058823529411765,
+   "ci95": [
+    -0.09210526315789473,
+    0.22666666666666666
+   ],
+   "p_permutation": 0.49125087491250874,
+   "contrast": "REFLECT-NONE resolved",
+   "p_holm": 0.7841215878412159
+  }
+ ],
+ "rates": {
+  "NONE": {
+   "resolved": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.43529411764705883,
+    "ci95": [
+     0.2871287128712871,
+     0.6197183098591549
+    ]
+   },
+   "edited_any": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.8235294117647058,
+    "ci95": [
+     0.7111111111111111,
+     0.926829268292683
+    ]
+   },
+   "edit_fix_file": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.7764705882352941,
+    "ci95": [
+     0.6206896551724138,
+     0.9166666666666666
+    ]
+   },
+   "fix_file_given_edited": {
+    "n_instances": 70,
+    "n_tasks": 31,
+    "difference": 0.9428571428571428,
+    "ci95": [
+     0.8181818181818182,
+     1.0
+    ]
+   },
+   "resolved_given_fix_file": {
+    "n_instances": 66,
+    "n_tasks": 30,
+    "difference": 0.5606060606060606,
+    "ci95": [
+     0.38666666666666666,
+     0.7627118644067796
+    ]
+   },
+   "resolved_given_no_fix_file": {
+    "n_instances": 19,
+    "n_tasks": 8,
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "HISTORY": {
+   "resolved": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.5411764705882353,
+    "ci95": [
+     0.3829787234042553,
+     0.71875
+    ]
+   },
+   "edited_any": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.9647058823529412,
+    "ci95": [
+     0.9142857142857143,
+     1.0
+    ]
+   },
+   "edit_fix_file": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.9058823529411765,
+    "ci95": [
+     0.7878787878787878,
+     1.0
+    ]
+   },
+   "fix_file_given_edited": {
+    "n_instances": 82,
+    "n_tasks": 32,
+    "difference": 0.9390243902439024,
+    "ci95": [
+     0.8148148148148148,
+     1.0
+    ]
+   },
+   "resolved_given_fix_file": {
+    "n_instances": 77,
+    "n_tasks": 32,
+    "difference": 0.5974025974025974,
+    "ci95": [
+     0.44680851063829785,
+     0.7571428571428571
+    ]
+   },
+   "resolved_given_no_fix_file": {
+    "n_instances": 8,
+    "n_tasks": 3,
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "REFLECT": {
+   "resolved": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.5058823529411764,
+    "ci95": [
+     0.35443037974683544,
+     0.6857142857142857
+    ]
+   },
+   "edited_any": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.8823529411764706,
+    "ci95": [
+     0.8080808080808081,
+     0.9594594594594594
+    ]
+   },
+   "edit_fix_file": {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.8352941176470589,
+    "ci95": [
+     0.69,
+     0.9558823529411765
+    ]
+   },
+   "fix_file_given_edited": {
+    "n_instances": 75,
+    "n_tasks": 32,
+    "difference": 0.9466666666666667,
+    "ci95": [
+     0.8309859154929577,
+     1.0
+    ]
+   },
+   "resolved_given_fix_file": {
+    "n_instances": 71,
+    "n_tasks": 31,
+    "difference": 0.6056338028169014,
+    "ci95": [
+     0.4533333333333333,
+     0.7741935483870968
+    ]
+   },
+   "resolved_given_no_fix_file": {
+    "n_instances": 14,
+    "n_tasks": 6,
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ "mean_cost_usd": {
+  "NONE": 0.08396644705882353,
+  "HISTORY": 0.09549734117647059,
+  "REFLECT": 0.11456098823529412
+ },
+ "mean_seconds": {
+  "NONE": 116.7445725405296,
+  "HISTORY": 106.10593419328258,
+  "REFLECT": 134.468505336494
+ },
+ "complete_three_arm_sensitivity": {
+  "n_instances": 85,
+  "edited_any": [
+   {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.1411764705882353,
+    "ci95": [
+     0.05128205128205128,
+     0.23809523809523808
+    ],
+    "p_permutation": 0.013498650134986502,
+    "contrast": "HISTORY-NONE"
+   },
+   {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.058823529411764705,
+    "ci95": [
+     -0.022988505747126436,
+     0.1625
+    ],
+    "p_permutation": 0.3752624737526247,
+    "contrast": "REFLECT-NONE"
+   }
+  ],
+  "resolved": [
+   {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.10588235294117647,
+    "ci95": [
+     -0.08888888888888889,
+     0.2926829268292683
+    ],
+    "p_permutation": 0.38066193380661933,
+    "contrast": "HISTORY-NONE"
+   },
+   {
+    "n_instances": 85,
+    "n_tasks": 32,
+    "difference": 0.07058823529411765,
+    "ci95": [
+     -0.09473684210526316,
+     0.22535211267605634
+    ],
+    "p_permutation": 0.5010498950104989,
+    "contrast": "REFLECT-NONE"
+   }
+  ]
+ },
+ "retry_endings": {
+  "NONE": {
+   "response_limit": 43,
+   "declared_done": 28,
+   "context_limit": 11,
+   "output_limit": 1,
+   "tool_timeout": 2
+  },
+  "HISTORY": {
+   "declared_done": 40,
+   "response_limit": 24,
+   "response_limit/non_test_exit": 2,
+   "context_limit": 15,
+   "output_limit": 2,
+   "tool_timeout/timeout": 1,
+   "invalid_test_execution/non_test_exit": 1
+  },
+  "REFLECT": {
+   "declared_done": 32,
+   "response_limit": 38,
+   "invalid_test_execution/non_test_exit": 2,
+   "context_limit": 8,
+   "response_limit/non_test_exit": 3,
+   "output_limit": 1,
+   "tool_timeout/timeout": 1
+  }
+ },
+ "m1_side_by_side": {
+  "resolved": {
+   "HISTORY-NONE": {
+    "difference": 0.09392265193370165,
+    "ci95": [
+     -0.005,
+     0.1890547263681592
+    ],
+    "n_instances": 181
+   },
+   "REFLECT-NONE": {
+    "difference": 0.07222222222222222,
+    "ci95": [
+     -0.022727272727272728,
+     0.17415730337078653
+    ],
+    "n_instances": 180
+   }
+  },
+  "reflect_minus_history": {
+   "difference": -0.016666666666666666,
+   "ci95": [
+    -0.08743169398907104,
+    0.04864864864864865
+   ],
+   "n_instances": 180
+  },
+  "edited_any": {
+   "HISTORY": {
+    "difference": 0.1712707182320442,
+    "ci95": [
+     0.07894736842105263,
+     0.2611111111111111
+    ],
+    "n_instances": 181
+   },
+   "REFLECT": {
+    "difference": 0.13333333333333333,
+    "ci95": [
+     0.06282722513089005,
+     0.2057142857142857
+    ],
+    "n_instances": 180
+   }
+  },
+  "fix_file_given_edited": {
+   "NONE": {
+    "rate": 0.976,
+    "n": 125
+   },
+   "HISTORY": {
+    "rate": 0.9807692307692307,
+    "n": 156
+   },
+   "REFLECT": {
+    "rate": 0.9594594594594594,
+    "n": 148
+   }
+  },
+  "source": [
+   "planning/m1-main-r1/analysis-final/analysis-C.json",
+   "planning/m1-main-r1/analysis-final/posthoc-revision-r1.json"
+  ]
+ }
+}

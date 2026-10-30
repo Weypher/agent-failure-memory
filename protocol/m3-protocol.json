@@ -1,0 +1,39 @@
+{
+ "kind": "M3_PROTOCOL",
+ "title": "Notice-only control: is the edit difference caused by telling the agent that the previous attempt failed?",
+ "motivation": "Internal pre-submission review (2026-10-29): every memory condition carries the header 'That attempt did not make the selected tests pass. The workspace has been reset to its original state.', NONE carries nothing, so the post hoc edit difference (M1) and the M2 H1 result for HISTORY cannot be attributed to memory content.",
+ "authorization": "REQUIRES explicit user spending authorization before any call (not covered by the M2 authorization); the runner refuses to start unless planning/m3-notice/user-authorization.json records authorized=true, permission M3_NOTICE_ONLY, the parts and these stage caps. Estimated cost about USD47 (mini about USD16, gpt-5.4 about USD31); stage cap USD60 (mini part USD20, gpt54 part USD40); cumulative ledger cap USD220 unchanged (about USD133.7 used before M3).",
+ "units": "Every natural failure of M1 (181 failures, 52 tasks, gpt-5.4-mini-2026-03-17) and M2 (85 failures, 32 tasks, gpt-5.4-2026-03-05); frozen lists m3-inputs-r2/failures-{mini,gpt54}.json built by m3/build_failures.py, with sha256 of each stored HISTORY and REFLECT prompt.",
+ "conditions": {
+  "NONE": "First-attempt prompt, byte-identical (fresh run).",
+  "NOTICE": "First-attempt prompt plus exactly memory.MEMORY_HEADER and a newline, i.e. what every memory condition adds besides its memory content. The header announces information that does not follow; the model may read this as missing information (threat).",
+  "HISTORY": "The failure's stored HISTORY prompt from M1/M2, byte-identical (hash-checked), fresh run.",
+  "REFLECT": "The failure's stored REFLECT prompt (the same lesson text as in M1/M2), byte-identical (hash-checked), fresh run."
+ },
+ "procedure": "Each failure gets one fresh retry per condition from the original workspace with the failure's own model and all M1/M2 settings. Within a failure the four retries run one after another in an order rotated by (task index + repetition); all four conditions are run in the same M3 session, so contrasts do not compare runs made weeks apart. M1/M2 retries are not reused in any M3 contrast.",
+ "harness_rules": "As M2: intention to treat; harness/provider errors make a retry missing; circuit breaker after 3 transient provider errors; any other harness error stops the part; no resume. If a part stops, only tasks whose rows are 'complete' are analysed and the result is labelled PARTIAL. Once a part starts it is reported whatever the result.",
+ "hypotheses": {
+  "N1": "NOTICE - NONE > 0 in the share of retries that modify at least one .py file.",
+  "N2": "HISTORY - NOTICE and REFLECT - NOTICE in the same outcome (effect of memory content beyond the notice); no directional prediction."
+ },
+ "analysis": {
+  "per_part": "Each model (part) analysed separately; never pooled.",
+  "primary_family": "Modified at least one .py file: NOTICE - NONE, HISTORY - NOTICE, REFLECT - NOTICE; mean paired difference, 95% task-cluster bootstrap CI (10000 resamples, seed 20261030), two-sided task-level sign-flip permutation p, Holm over the three, alpha 0.05.",
+  "secondary_family": "Resolved on the selected tests: the same three contrasts and decision table, Holm over three.",
+  "descriptive": "X - NONE for edits, resolution and 'declared done without an edit'; per-arm rates; endings; missing retries per arm; ledger cost.",
+  "checks": "Analysed rows must match the frozen (task, rep) list; unanalysed failures are listed.",
+  "precision_note": "In M1 the edit contrasts had CIs of about +/-9 points with 181 failures; with 85 gpt-5.4 failures expect about +/-13. Only 17.6% of M2 plain retries ended without an edit, leaving little room for N1 in the gpt54 part.",
+  "code": "m3/analyze_m3.py, frozen with this protocol."
+ },
+ "threats": "Failures were selected by M1/M2 first attempts and are reused (this does not bias the within-M3 contrasts, all arms being new runs, but limits generalisation); the same tasks generated the hypotheses. One retry per condition per failure. The NOTICE header announces information that is absent. Reported in the paper as a predeclared follow-up of a post hoc finding.",
+ "revision": "r2: addresses M3 review r1 (validity FAIL: decision rule, REFLECT arm, sign; implementation FAIL: m1/accuracy.py coverage; minors).",
+ "decision_table": {
+  "N1": "supported iff NOTICE - NONE > 0 and p_Holm < 0.05; 'opposite' iff < 0 and p_Holm < 0.05; otherwise not supported (inconclusive).",
+  "content_effects": "For X in {HISTORY, REFLECT}: 'positive' iff X - NOTICE > 0 with p_Holm < 0.05; 'negative' iff < 0 with p_Holm < 0.05; 'equivalent within 10 points' iff its 95% CI lies inside [-10, +10] points; otherwise 'not distinguished'. We never report 'no content effect'; the 10-point margin is coarse and stated as such.",
+  "attribution": "The edit difference is attributed to the notice for condition X only if N1 is supported AND X - NOTICE is 'equivalent within 10 points'. If N1 is supported and X - NOTICE is 'positive', both notice and content contribute. Any other combination is reported as 'not distinguished'.",
+  "models": "Each model is reported separately with its own decisions; disagreement between models is reported as such, not reconciled."
+ },
+ "status": "FROZEN_FOR_INDEPENDENT_REVIEW",
+ "frozen": true,
+ "part": "gpt54"
+}

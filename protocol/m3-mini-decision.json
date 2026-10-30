@@ -1,0 +1,6 @@
+{
+ "decided": "2026-10-29T19:25:23.742655",
+ "decision": "mini part reported as PARTIAL (46 of 52 tasks, 156 of 181 failures complete); no resume.",
+ "reason": "Stopped at youtube-dl/37 R2-NOTICE on an infrastructure_error (ValueError in subprocess launch, likely a model-generated command the OS cannot execute); the frozen rule says a stopped part is analysed on completed tasks and labelled PARTIAL; the user was told this before any outcome was examined.",
+ "note": "Recorded before any M3 outcome was analysed."
+}

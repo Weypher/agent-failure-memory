@@ -1,0 +1,8 @@
+{
+ "kind": "M3_RESUME_ADDENDUM_2",
+ "written": "2026-10-29 PDT, before any M3 outcome of either model was examined (only row statuses and stop records read)",
+ "reason": "gpt54b stopped at tornado/1 within its first task on a local OSError in the per-call scope hash check (reading a scoped file from the 9p-mounted repository) while the mini part ran concurrently; no gpt54b task completed (39 calls, about USD0.37). The addendum r1 rule said only one resume and a second stop gives PARTIAL; this second resume deviates from it.",
+ "authority": "User reply 2026-10-29 19:17 PDT to the choice between A (report 44 failures as PARTIAL) and B (one more resume): 'B'. Earlier standing instruction: '\u8dd1\u5b8c\u6240\u6709\u5b9e\u9a8c \u6709\u95ee\u9898\u7684\u53ef\u4ee5\u9009\u62e9\u6027\u91cd\u590d1-2\u6b21'.",
+ "resume": "Part gpt54c reruns the same 41 failures (16 tasks) as gpt54b, after the mini part finished, with identical model, settings, prompts, arm rotation and analysis. gpt54b rows are discarded (none complete). If gpt54c stops, its completed rows are added and the gpt-5.4 result is PARTIAL; no further resume.",
+ "analysis": "Completed gpt54 rows (16 tasks) plus gpt54c rows, merged by m3/merge_m3c.py (hash recorded before outcomes), analysed with the frozen m3/analyze_m3.py on the frozen 85-failure gpt54 list."
+}

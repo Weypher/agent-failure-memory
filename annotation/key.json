@@ -1,0 +1,318 @@
+{
+ "seed": 20261028,
+ "allocation": {
+  "ansible": 3,
+  "black": 20,
+  "fastapi": 3,
+  "httpie": 3,
+  "luigi": 3,
+  "sanic": 2,
+  "scrapy": 5,
+  "thefuck": 2,
+  "tornado": 3,
+  "tqdm": 5,
+  "youtube-dl": 11
+ },
+ "items": [
+  {
+   "item": "item-01",
+   "task": "scrapy/25",
+   "rep": 1
+  },
+  {
+   "item": "item-02",
+   "task": "tornado/14",
+   "rep": 6
+  },
+  {
+   "item": "item-03",
+   "task": "black/9",
+   "rep": 2
+  },
+  {
+   "item": "item-04",
+   "task": "fastapi/4",
+   "rep": 1
+  },
+  {
+   "item": "item-05",
+   "task": "httpie/5",
+   "rep": 6
+  },
+  {
+   "item": "item-06",
+   "task": "youtube-dl/36",
+   "rep": 3
+  },
+  {
+   "item": "item-07",
+   "task": "black/12",
+   "rep": 6
+  },
+  {
+   "item": "item-08",
+   "task": "black/23",
+   "rep": 3
+  },
+  {
+   "item": "item-09",
+   "task": "thefuck/17",
+   "rep": 1
+  },
+  {
+   "item": "item-10",
+   "task": "scrapy/25",
+   "rep": 6
+  },
+  {
+   "item": "item-11",
+   "task": "youtube-dl/22",
+   "rep": 3
+  },
+  {
+   "item": "item-12",
+   "task": "ansible/11",
+   "rep": 1
+  },
+  {
+   "item": "item-13",
+   "task": "black/7",
+   "rep": 1
+  },
+  {
+   "item": "item-14",
+   "task": "black/13",
+   "rep": 4
+  },
+  {
+   "item": "item-15",
+   "task": "tqdm/6",
+   "rep": 5
+  },
+  {
+   "item": "item-16",
+   "task": "youtube-dl/37",
+   "rep": 2
+  },
+  {
+   "item": "item-17",
+   "task": "scrapy/15",
+   "rep": 1
+  },
+  {
+   "item": "item-18",
+   "task": "youtube-dl/16",
+   "rep": 4
+  },
+  {
+   "item": "item-19",
+   "task": "luigi/3",
+   "rep": 4
+  },
+  {
+   "item": "item-20",
+   "task": "black/9",
+   "rep": 5
+  },
+  {
+   "item": "item-21",
+   "task": "luigi/23",
+   "rep": 6
+  },
+  {
+   "item": "item-22",
+   "task": "youtube-dl/19",
+   "rep": 2
+  },
+  {
+   "item": "item-23",
+   "task": "black/3",
+   "rep": 1
+  },
+  {
+   "item": "item-24",
+   "task": "httpie/5",
+   "rep": 5
+  },
+  {
+   "item": "item-25",
+   "task": "youtube-dl/22",
+   "rep": 5
+  },
+  {
+   "item": "item-26",
+   "task": "fastapi/2",
+   "rep": 6
+  },
+  {
+   "item": "item-27",
+   "task": "black/18",
+   "rep": 6
+  },
+  {
+   "item": "item-28",
+   "task": "youtube-dl/16",
+   "rep": 3
+  },
+  {
+   "item": "item-29",
+   "task": "fastapi/9",
+   "rep": 1
+  },
+  {
+   "item": "item-30",
+   "task": "black/10",
+   "rep": 1
+  },
+  {
+   "item": "item-31",
+   "task": "scrapy/15",
+   "rep": 3
+  },
+  {
+   "item": "item-32",
+   "task": "youtube-dl/19",
+   "rep": 5
+  },
+  {
+   "item": "item-33",
+   "task": "ansible/8",
+   "rep": 5
+  },
+  {
+   "item": "item-34",
+   "task": "scrapy/3",
+   "rep": 3
+  },
+  {
+   "item": "item-35",
+   "task": "tornado/6",
+   "rep": 6
+  },
+  {
+   "item": "item-36",
+   "task": "black/7",
+   "rep": 2
+  },
+  {
+   "item": "item-37",
+   "task": "sanic/3",
+   "rep": 2
+  },
+  {
+   "item": "item-38",
+   "task": "black/14",
+   "rep": 1
+  },
+  {
+   "item": "item-39",
+   "task": "tqdm/6",
+   "rep": 6
+  },
+  {
+   "item": "item-40",
+   "task": "ansible/8",
+   "rep": 4
+  },
+  {
+   "item": "item-41",
+   "task": "tornado/6",
+   "rep": 5
+  },
+  {
+   "item": "item-42",
+   "task": "black/23",
+   "rep": 2
+  },
+  {
+   "item": "item-43",
+   "task": "black/22",
+   "rep": 5
+  },
+  {
+   "item": "item-44",
+   "task": "thefuck/16",
+   "rep": 3
+  },
+  {
+   "item": "item-45",
+   "task": "black/8",
+   "rep": 6
+  },
+  {
+   "item": "item-46",
+   "task": "tqdm/5",
+   "rep": 1
+  },
+  {
+   "item": "item-47",
+   "task": "sanic/2",
+   "rep": 6
+  },
+  {
+   "item": "item-48",
+   "task": "youtube-dl/16",
+   "rep": 2
+  },
+  {
+   "item": "item-49",
+   "task": "black/3",
+   "rep": 2
+  },
+  {
+   "item": "item-50",
+   "task": "black/22",
+   "rep": 2
+  },
+  {
+   "item": "item-51",
+   "task": "tqdm/7",
+   "rep": 3
+  },
+  {
+   "item": "item-52",
+   "task": "httpie/5",
+   "rep": 3
+  },
+  {
+   "item": "item-53",
+   "task": "tqdm/2",
+   "rep": 3
+  },
+  {
+   "item": "item-54",
+   "task": "luigi/9",
+   "rep": 5
+  },
+  {
+   "item": "item-55",
+   "task": "youtube-dl/19",
+   "rep": 3
+  },
+  {
+   "item": "item-56",
+   "task": "black/10",
+   "rep": 3
+  },
+  {
+   "item": "item-57",
+   "task": "black/8",
+   "rep": 2
+  },
+  {
+   "item": "item-58",
+   "task": "black/13",
+   "rep": 5
+  },
+  {
+   "item": "item-59",
+   "task": "black/7",
+   "rep": 6
+  },
+  {
+   "item": "item-60",
+   "task": "youtube-dl/36",
+   "rep": 4
+  }
+ ]
+}
